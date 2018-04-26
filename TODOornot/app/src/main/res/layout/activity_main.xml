@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ca.nait.weite.todoornot.MainActivity">
+
+    <EditText
+        android:id="@+id/job_title_text_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/job_title_hint"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:width="200dp"/>
+    <Button
+        android:id="@+id/send_title_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/job_title_submit_button"/>
+    <Spinner
+        android:id="@+id/title_spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/job_title_text_sender"/>
+
+    <EditText
+        android:id="@+id/item_text_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter a task"
+        android:layout_below="@+id/title_spinner"
+        android:width="200dp"/>
+    <Button
+        android:id="@+id/send_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title_spinner"
+        android:text="ADD ITem"/>
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_text_sender"></ListView>
+
+</RelativeLayout>

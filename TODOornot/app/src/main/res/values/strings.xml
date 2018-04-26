@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TODO or not</string>
+    <string name="job_title_hint">Enter job</string>
+    <string name="job_title_submit_button">submit</string>
+</resources>
