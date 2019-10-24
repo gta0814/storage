@@ -11,9 +11,10 @@ namespace test
     {
         static void Main(string[] args)
         {
-            var pw = "One23456";
+            var pw = "FP8NEsilUH19BzSvmSb8Yw==";
             var d = "doie321";
-            Console.WriteLine(Config.Encrypt(pw));
+
+            Console.WriteLine(pw.GetType().GetProperty);
             Console.ReadKey();
         }
     }
