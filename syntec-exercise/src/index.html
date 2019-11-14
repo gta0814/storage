@@ -1,0 +1,85 @@
+<!-- 
+  There are 3 parts to this exercise, please do the focus on the first two parts, if you have time and want to show
+      more of your abilities please feel free to do as much of the 3rd part as you can. Please just create a fork of
+      this project to do your work on.
+
+  Part 1: Render a list from API call
+    - Data API -  https://emplistapi-258220.appspot.com/
+    - API returns list employees with the following format:
+            {
+              "name": {
+                        "first": string,
+                        "last": string,
+                      },
+              "jobTitle": string,
+              "photoURL": string?
+            }
+    - The API accepts two parameters: pageSize, pageNumber (theres a limited amount of mock data, high 
+      page numbers wont contain data)
+    - The api can be assumed to always return valid data.
+    - Employees always have a first name, last name, and job title.
+    - Not all employees have a photo
+    - Sample list view - https://storage.googleapis.com/sampleemplistbucket/interviewsample.jpg
+  Part 2: Implement an "Add Employee" button
+    - Clicking the button should show a modal form containing all possible fields used to add an employee
+    - The data provided doesn't actually need to save to the server. Clicking
+      "save" should show a message that the employee was saved, then close the      
+      modal. 
+    - The data that would have been saved can be returned from the function (doesn't get used, 
+      but should be used to show the format)
+    - There are a limited amount of job title options
+  Part 3: Optional things that you might want to do if you are able to show you abilities
+    - Sorting
+    - Drag and drop
+    - Load more
+    - Anything else that you can think of that might be useful on a web form like this
+
+  Requirements:
+    - Should work in Chrome. Other browsers will not be looked at.
+    - Should be relatively responsive down to 375x667 (iPhone 6/7/8 preset in Chrome Dev Tools). 
+      *** 768x1024 to 1920x1080 should be prioritized ***
+    - Document any assumptions
+    - Any style guide is fine, but should be consistent
+    - Can use Bulma (included), but no other libraries or frameworks (jQuery, React)
+    - Doesn't need to be pixel perfect, focus is on reusability, readability, consistency, best practices, etc.
+Resources:
+Bulma - https://bulma.io/documentation/
+-->
+
+
+<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+      <a class="navbar-item">
+        Appointments
+      </a>
+      <a class="navbar-item">
+        Clients
+      </a>
+      <a class="navbar-item">
+        Employees
+      </a>
+    </div>
+    <div class="navbar-end">
+        <a class="navbar-item">Sign Out</a>
+    </div>
+  </div>
+</nav>
+<section class="section">
+  <div class="container">
+    <h1 class="title">Employees</h1>
+    <article id="employees">
+      <!-- Render Content Here -->   
+    </article>
+  </div>
+</section>
