@@ -4,12 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93DDFB4C-CAA9-46C0-9A9D-B2A12D139F74}</ProjectGuid>
+    <ProjectGuid>{73FA37ED-8784-4C2E-95B2-174274A1D5B1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>XiaoXiong.ConsoleApp</RootNamespace>
     <AssemblyName>XiaoXiong.ConsoleApp</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -49,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExcelModifyer\ExcelModifyer.csproj">
-      <Project>{a44b236d-f1c7-426c-875c-41d7aecc17d3}</Project>
-      <Name>ExcelModifyer</Name>
+    <ProjectReference Include="..\XiaoXiong.CheckQOH\XiaoXiong.LightLiberay.csproj">
+      <Project>{d508ef2a-e4f0-4b9f-86c4-b99ba2f3f549}</Project>
+      <Name>XiaoXiong.LightLiberay</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

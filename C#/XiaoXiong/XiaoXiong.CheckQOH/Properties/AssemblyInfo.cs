@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ExcelModifyer")]
+[assembly: AssemblyTitle("XiaoXiong.CheckQOH")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ExcelModifyer")]
+[assembly: AssemblyProduct("XiaoXiong.CheckQOH")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a44b236d-f1c7-426c-875c-41d7aecc17d3")]
+[assembly: Guid("d508ef2a-e4f0-4b9f-86c4-b99ba2f3f549")]
 
 // Version information for an assembly consists of the following four values:
 //

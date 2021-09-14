@@ -1,9 +1,9 @@
-﻿using ExcelModifyer;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using XiaoXiong.CheckQOH;
 
 namespace XiaoXiong.ConsoleApp
 {
@@ -11,8 +11,7 @@ namespace XiaoXiong.ConsoleApp
     {
         static void Main(string[] args)
         {
-            CheckQOH.ShipCheck();
-
+            CheckQOH.CheckQOH.ShipCheck();
         }
     }
 }

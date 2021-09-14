@@ -1,7 +1,4 @@
-﻿using DocumentFormat.OpenXml;
-using DocumentFormat.OpenXml.Packaging;
-using DocumentFormat.OpenXml.Spreadsheet;
-using SpreadsheetLight;
+﻿using SpreadsheetLight;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExcelModifyer
+namespace XiaoXiong.CheckQOH
 {
     public class CheckQOH
     {
@@ -102,22 +99,21 @@ namespace ExcelModifyer
         {
             Dictionary<string, int> letterIndex = new Dictionary<string, int>() { { "A", 1 }, { "B", 2 }, { "C", 3 }, { "D", 4 }, { "E", 5 }, { "F", 6 }, { "G", 7 }, { "H", 8 }, { "I", 9 }, { "J", 10 }, { "K", 11 }, { "L", 12 }, { "M", 13 }, { "N", 14 } };
 
-            SLDocument dD = new SLDocument(@"C:\Github\storage\C#\ExeclModifyer\ExcelModifyer\aaa.xlsx");
-            //SLDocument pO = new SLDocument(@"D:\SO billing based on Inventory Dates V1.xlsx", "PO");
+            //SLDocument dD = new SLDocument(@"C:\Github\storage\C#\ExeclModifyer\ExcelModifyer\aaa.xlsx");
+            SLDocument pO = new SLDocument(@"D:\SO billing based on Inventory Dates V1.xlsx", "Coming POs");
             //SLDocument qOH = new SLDocument(@"D:\SO billing based on Inventory Dates V1.xlsx", "Inventory QoH Sep 09");
 
 
-            //var a = dD.GetCellValueAsString("B5");
-            //var b = pO.GetCellValueAsString("A5");
-            //var c = qOH.GetCellValueAsString("A5");
             //int row = 9999;
             //int column = 20;
 
+            pO.SelectWorksheet("Detail Data for Bill Date");
+            pO.SetCellValue(2, 5, "5555555");
             //dD.SetCellValue("A6", "5555");
             //pO.SetCellValue("A6", "6666");
             //qOH.SetCellValue("A6", "7777");
-            dD.SaveAs(@"Open Orders Report1.xlsx");
-            //pO.SaveAs(@"D:\Open Orders Report1.xlsx");
+            //dD.SaveAs(@"Open Orders Report1.xlsx");
+            pO.SaveAs(@"D:\Open Orders Report1.xlsx");
             //qOH.SaveAs(@"D:\Open Orders Report1.xlsx");
             Console.WriteLine("Press ANY key");
         }
