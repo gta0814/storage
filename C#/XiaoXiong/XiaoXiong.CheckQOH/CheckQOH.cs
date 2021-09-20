@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using XiaoXiong.CheckQOH.Model;
 
 namespace XiaoXiong.CheckQOH
 {
@@ -100,18 +101,35 @@ namespace XiaoXiong.CheckQOH
             Dictionary<string, int> letterIndex = new Dictionary<string, int>() { { "A", 1 }, { "B", 2 }, { "C", 3 }, { "D", 4 }, { "E", 5 }, { "F", 6 }, { "G", 7 }, { "H", 8 }, { "I", 9 }, { "J", 10 }, { "K", 11 }, { "L", 12 }, { "M", 13 }, { "N", 14 } };
 
             SLDocument sl = new SLDocument(@"D:\SO billing based on Inventory Dates V1.xlsx", "Coming POs");
-
-
-            //int row = 9999;
-            //int column = 20;
-            sl.SetCellValue("B5", "5555555");
-            sl.SelectWorksheet("Detail Data for Bill Date");
-            sl.SetCellValue("C5", "5555555");
+            List<QOH> qOHs = new List<QOH>();
+            List<ComingPO> comingPOs = new List<ComingPO>();
+            var sheetInfo = sl.GetWorksheetStatistics();
             
-            //dD.SetCellValue("A6", "5555");
-            //pO.SetCellValue("A6", "6666");
-            //qOH.SetCellValue("A6", "7777");
-            //dD.SaveAs(@"Open Orders Report1.xlsx");
+            for (int i = 3; i <= sheetInfo.EndRowIndex; i++)
+            {
+                QOH qoh = new QOH();
+                qoh.Id = i;
+                qoh.QOHInternalRef = sl.GetCellValueAsString($"B{i}");
+                qoh.Qty = sl.GetCellValueAsInt32($"E{i}");
+                qOHs.Add(qoh);
+            }
+
+            sl.SelectWorksheet("coming po");
+            sheetInfo = sl.GetWorksheetStatistics();
+
+            for (int i = 3; i <= sheetInfo.EndRowIndex; i++)
+            {
+                ComingPO comingPO = new ComingPO();
+                comingPO.Id = i;
+                comingPO.CPOInternalRef = sl.GetCellValueAsString($"B{i}");
+                comingPO.Qty = sl.GetCellValueAsInt32($"E{i}");
+                comingPO.ComingDate = sl.GetCellValueAsDateTime($"F{i}");
+                comingPOs.Add(comingPO);
+            }
+
+            sl.SelectWorksheet("now");
+
+            sl.SetCellValue("C5", "5555555");
             sl.SaveAs(@"D:\Open Orders Report1.xlsx");
             //qOH.SaveAs(@"D:\Open Orders Report1.xlsx");
             Console.WriteLine("Press ANY key");

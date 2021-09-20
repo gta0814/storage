@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheckQOH.cs" />
+    <Compile Include="Model\ComingPO.cs" />
+    <Compile Include="Model\QOH.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
