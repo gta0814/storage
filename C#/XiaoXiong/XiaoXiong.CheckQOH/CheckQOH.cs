@@ -100,39 +100,77 @@ namespace XiaoXiong.CheckQOH
         {
             Dictionary<string, int> letterIndex = new Dictionary<string, int>() { { "A", 1 }, { "B", 2 }, { "C", 3 }, { "D", 4 }, { "E", 5 }, { "F", 6 }, { "G", 7 }, { "H", 8 }, { "I", 9 }, { "J", 10 }, { "K", 11 }, { "L", 12 }, { "M", 13 }, { "N", 14 } };
 
-            SLDocument sl = new SLDocument(@"D:\SO billing based on Inventory Dates V1.xlsx", "Coming POs");
+            SLDocument sl = new SLDocument(@"C:\Github\storage\C#\XiaoXiong\SO billing based on Inventory Dates V1.xlsx", "Qty on Hand");
             List<QOH> qOHs = new List<QOH>();
             List<ComingPO> comingPOs = new List<ComingPO>();
             var sheetInfo = sl.GetWorksheetStatistics();
             
-            for (int i = 3; i <= sheetInfo.EndRowIndex; i++)
+            for (int i = 2; i <= sheetInfo.EndRowIndex; i++)
             {
                 QOH qoh = new QOH();
                 qoh.Id = i;
-                qoh.QOHInternalRef = sl.GetCellValueAsString($"B{i}");
-                qoh.Qty = sl.GetCellValueAsInt32($"E{i}");
+                qoh.QOHInternalRef = sl.GetCellValueAsString($"A{i}");
+                qoh.Qty = sl.GetCellValueAsInt32($"B{i}");
                 qOHs.Add(qoh);
             }
 
-            sl.SelectWorksheet("coming po");
+            sl.SelectWorksheet("Coming POs");
             sheetInfo = sl.GetWorksheetStatistics();
 
-            for (int i = 3; i <= sheetInfo.EndRowIndex; i++)
+            for (int i = 2; i <= sheetInfo.EndRowIndex; i++)
             {
                 ComingPO comingPO = new ComingPO();
                 comingPO.Id = i;
-                comingPO.CPOInternalRef = sl.GetCellValueAsString($"B{i}");
-                comingPO.Qty = sl.GetCellValueAsInt32($"E{i}");
-                comingPO.ComingDate = sl.GetCellValueAsDateTime($"F{i}");
+                comingPO.CPOInternalRef = sl.GetCellValueAsString($"D{i}");
+                comingPO.Qty = sl.GetCellValueAsInt32($"G{i}");
+                comingPO.ComingDate = sl.GetCellValueAsDateTime($"C{i}");
                 comingPOs.Add(comingPO);
             }
 
-            sl.SelectWorksheet("now");
+            sl.SelectWorksheet("Detail Data for Bill Date");
+            sheetInfo = sl.GetWorksheetStatistics();
+            string interRef;
+            int rToShip;
+            DateTime shipDate;
+            for (int i = 2; i < sheetInfo.EndRowIndex; i++)
+            {
+                shipDate = sl.GetCellValueAsDateTime($"E{i}");
+                interRef = sl.GetCellValueAsString($"L{i}");
+                rToShip = sl.GetCellValueAsInt32($"U{i}");
+                foreach (var item in qOHs)
+                {
+                    if (interRef.Contains(item.QOHInternalRef))
+                    {
+                        int remain = item.Qty - rToShip;
+                        if (remain < 0)
+                        {
+                            
+                        }
+                        else if (remain == 0)
+                        {
+                            sl.SetCellValue($"AC{i}", shipDate);
+                            sl.SetCellValue($"AD{i}", rToShip);
+                            qOHs.RemoveAt(item.Id - 1);
+                        }
+                        else
+                        {
+                            sl.SetCellValue($"AC{i}", shipDate);
+                            sl.SetCellValue($"AD{i}", rToShip);
+                            item.Qty = remain;
+                        }
+                    }
+                }
+            }
 
-            sl.SetCellValue("C5", "5555555");
+
             sl.SaveAs(@"D:\Open Orders Report1.xlsx");
             //qOH.SaveAs(@"D:\Open Orders Report1.xlsx");
             Console.WriteLine("Press ANY key");
+        }
+        
+        public static void CheckComingOrder(int qty)
+        {
+
         }
     }
 }
