@@ -100,7 +100,7 @@ namespace XiaoXiong.CheckQOH
         {
             Dictionary<string, int> letterIndex = new Dictionary<string, int>() { { "A", 1 }, { "B", 2 }, { "C", 3 }, { "D", 4 }, { "E", 5 }, { "F", 6 }, { "G", 7 }, { "H", 8 }, { "I", 9 }, { "J", 10 }, { "K", 11 }, { "L", 12 }, { "M", 13 }, { "N", 14 } };
 
-            SLDocument sl = new SLDocument(@"C:\Github\storage\C#\XiaoXiong\SO billing based on Inventory Dates V1.xlsx", "Qty on Hand");
+            SLDocument sl = new SLDocument(@"F:\Github\storage\C#\XiaoXiong\SO billing based on Inventory Dates V1.xlsx", "Qty on Hand");
             List<QOH> qOHs = new List<QOH>();
             List<ComingPO> comingPOs = new List<ComingPO>();
             var sheetInfo = sl.GetWorksheetStatistics();
@@ -126,6 +126,7 @@ namespace XiaoXiong.CheckQOH
                 comingPO.ComingDate = sl.GetCellValueAsDateTime($"C{i}");
                 comingPOs.Add(comingPO);
             }
+            comingPOs = comingPOs.OrderBy(x => x.ComingDate).ToList();
 
             sl.SelectWorksheet("Detail Data for Bill Date");
             sheetInfo = sl.GetWorksheetStatistics();
@@ -135,35 +136,85 @@ namespace XiaoXiong.CheckQOH
             for (int i = 2; i < sheetInfo.EndRowIndex; i++)
             {
                 shipDate = sl.GetCellValueAsDateTime($"E{i}");
-                interRef = sl.GetCellValueAsString($"L{i}");
+                interRef = sl.GetCellValueAsString($"L{i}").Trim();
                 rToShip = sl.GetCellValueAsInt32($"U{i}");
                 foreach (var item in qOHs)
                 {
-                    if (interRef.Contains(item.QOHInternalRef))
+                    if (interRef == item.QOHInternalRef.Trim())
                     {
                         int remain = item.Qty - rToShip;
+                        //如果仓库不够或者没有
                         if (remain < 0)
                         {
-                            
+                            int tempQty;
+                            if (item.Qty > 0)
+                            {
+                                //如果仓库有货但不够
+                                sl.SetCellValue($"AC{i}", shipDate, "MM/dd/yyyy");
+                                sl.SetCellValue($"AD{i}", item.Qty);
+                                item.QOHInternalRef = item.QOHInternalRef + " - chekced";
+                                remain = remain * -1;
+                            }
+                            foreach (var cItem in comingPOs)
+                            {
+                                if (interRef == cItem.CPOInternalRef.Trim())
+                                {
+                                    remain = cItem.Qty - remain;
+                                    char letterDate = 'C';
+                                    char letterNumber = 'D';
+                                    var a = sl.GetCellValueAsString($"A{letterDate}{i}");
+                                    if (!string.IsNullOrWhiteSpace(sl.GetCellValueAsString($"A{letterDate}{i}")))
+                                    {
+                                        letterDate = 'E';
+                                        letterNumber = 'F';
+                                        if (!string.IsNullOrWhiteSpace(sl.GetCellValueAsString($"A{letterDate}{i}")))
+                                        {
+                                            letterDate = 'G';
+                                            letterNumber = 'H';
+                                        }
+                                    }
+
+                                    //如果coming不够或者没有
+                                    if (remain < 0)
+                                    {
+                                        sl.SetCellValue($"A{letterDate}{i}", cItem.ComingDate, "yyyy/mm/dd");
+                                        sl.SetCellValue($"A{letterNumber}{i}", cItem.Qty);
+                                        item.QOHInternalRef = item.QOHInternalRef + " - chekced";
+                                    }
+                                    else if (remain == 0)
+                                    {
+                                        sl.SetCellValue($"A{letterDate}{i}", cItem.ComingDate, "yyyy/mm/dd");
+                                        sl.SetCellValue($"A{letterNumber}{i}", cItem.Qty);
+                                        item.QOHInternalRef = item.QOHInternalRef + " - chekced";
+                                    }
+                                    else if (remain > 0)
+                                    {
+                                        sl.SetCellValue($"A{letterDate}{i}", cItem.ComingDate, "yyyy/mm/dd");
+                                        sl.SetCellValue($"A{letterNumber}{i}", remain);
+                                        cItem.Qty = remain;
+                                    }
+                                }
+                            }
                         }
                         else if (remain == 0)
                         {
-                            sl.SetCellValue($"AC{i}", shipDate);
+                            sl.SetCellValue($"AC{i}", shipDate, "MM/dd/yyyy");
                             sl.SetCellValue($"AD{i}", rToShip);
-                            qOHs.RemoveAt(item.Id - 1);
+                            item.QOHInternalRef = item.QOHInternalRef + " - chekced";
                         }
-                        else
+                        else if (remain > 0)
                         {
-                            sl.SetCellValue($"AC{i}", shipDate);
+                            sl.SetCellValue($"AC{i}", shipDate, "MM/dd/yyyy");
                             sl.SetCellValue($"AD{i}", rToShip);
                             item.Qty = remain;
                         }
+                        break;
                     }
                 }
             }
 
 
-            sl.SaveAs(@"D:\Open Orders Report1.xlsx");
+            sl.SaveAs(@"F:\Github\storage\C#\XiaoXiong\aaa.xlsx");
             //qOH.SaveAs(@"D:\Open Orders Report1.xlsx");
             Console.WriteLine("Press ANY key");
         }
