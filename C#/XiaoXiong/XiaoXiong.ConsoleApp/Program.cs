@@ -11,6 +11,8 @@ namespace XiaoXiong.ConsoleApp
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("计算中......稍等......");
             CheckQOH.CheckQOH.ShipCheck();
         }
     }

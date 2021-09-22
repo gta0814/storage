@@ -1,6 +1,7 @@
 ﻿using SpreadsheetLight;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -96,21 +97,66 @@ namespace XiaoXiong.CheckQOH
         //    }
         //    sl.SaveAs(@"D:\Downloads\accountmoveline Cleaned.xlsx");
         //}
+        public static void ShipCheckd()
+        {
+            SLDocument sl = new SLDocument();
+
+            sl.SetCellValue("A1", 123456789.12345);
+            sl.SetCellValue(2, 1, -123456789.12345);
+            sl.SetCellValue(3, 1, new DateTime(2123, 4, 15));
+            sl.SetCellValue(4, 1, 12.3456);
+            sl.SetCellValue(5, 1, 12.3456);
+            sl.SetCellValue("A6", 123456789.12345);
+
+            SLStyle style = sl.CreateStyle();
+            style.FormatCode = "#,##0.000";
+            sl.SetCellStyle("A1", style);
+
+            style = sl.CreateStyle();
+            style.FormatCode = "$#,##0.00_);[Red]($#,##0.00)";
+            sl.SetCellStyle(2, 1, style);
+
+            style = sl.CreateStyle();
+            style.FormatCode = "yyyy/m/d";
+            sl.SetCellStyle(3, 1, style);
+
+            // we can just reassign like this because the only property
+            // we just used was the FormatCode property
+
+            style.FormatCode = "0.00%";
+            sl.SetCellStyle("A4", style);
+
+            // this means "number with fractional part (2 digit denominator)"
+            style.FormatCode = "# ??/??";
+            sl.SetCellStyle(5, 1, style);
+
+            style.FormatCode = "0.000E+00";
+            sl.SetCellStyle(6, 1, style);
+            sl.SetCellValue(7, 1, new DateTime(2123, 4, 15), "yyyy/d/m");
+
+            sl.SaveAs("NumberFormat.xlsx");
+
+            Console.WriteLine("End of program");
+        }
+
         public static void ShipCheck()
         {
             Dictionary<string, int> letterIndex = new Dictionary<string, int>() { { "A", 1 }, { "B", 2 }, { "C", 3 }, { "D", 4 }, { "E", 5 }, { "F", 6 }, { "G", 7 }, { "H", 8 }, { "I", 9 }, { "J", 10 }, { "K", 11 }, { "L", 12 }, { "M", 13 }, { "N", 14 } };
 
-            SLDocument sl = new SLDocument(@"F:\Github\storage\C#\XiaoXiong\SO billing based on Inventory Dates V1.xlsx", "Qty on Hand");
+            SLDocument sl = new SLDocument(@"C:\Github\storage\C#\XiaoXiong\SO billing based on Inventory Dates V1.xlsx", "Qty on Hand");
+            //string dateFormat1 = "dd/MM/yyyy HH:mm:ss";
+            SLStyle dateFormat = new SLStyle();
+            dateFormat.FormatCode = "yyyy/m/d";
             List<QOH> qOHs = new List<QOH>();
             List<ComingPO> comingPOs = new List<ComingPO>();
             var sheetInfo = sl.GetWorksheetStatistics();
-            
+
             for (int i = 2; i <= sheetInfo.EndRowIndex; i++)
             {
                 QOH qoh = new QOH();
                 qoh.Id = i;
                 qoh.QOHInternalRef = sl.GetCellValueAsString($"A{i}");
-                qoh.Qty = sl.GetCellValueAsInt32($"B{i}");
+                qoh.Qty = sl.GetCellValueAsDouble($"B{i}");
                 qOHs.Add(qoh);
             }
 
@@ -122,44 +168,51 @@ namespace XiaoXiong.CheckQOH
                 ComingPO comingPO = new ComingPO();
                 comingPO.Id = i;
                 comingPO.CPOInternalRef = sl.GetCellValueAsString($"D{i}");
-                comingPO.Qty = sl.GetCellValueAsInt32($"G{i}");
+                comingPO.Qty = sl.GetCellValueAsDouble($"G{i}");
                 comingPO.ComingDate = sl.GetCellValueAsDateTime($"C{i}");
                 comingPOs.Add(comingPO);
             }
-            comingPOs = comingPOs.OrderBy(x => x.ComingDate).ToList();
+            comingPOs = comingPOs.OrderBy(x => x.ComingDate).ThenBy(n => n.Id).ToList();
 
             sl.SelectWorksheet("Detail Data for Bill Date");
             sheetInfo = sl.GetWorksheetStatistics();
             string interRef;
-            int rToShip;
+            double rToShip;
             DateTime shipDate;
+            double remain;
+            bool found;
             for (int i = 2; i < sheetInfo.EndRowIndex; i++)
             {
+                found = false;
                 shipDate = sl.GetCellValueAsDateTime($"E{i}");
                 interRef = sl.GetCellValueAsString($"L{i}").Trim();
-                rToShip = sl.GetCellValueAsInt32($"U{i}");
+                rToShip = sl.GetCellValueAsDouble($"U{i}");
                 foreach (var item in qOHs)
                 {
                     if (interRef == item.QOHInternalRef.Trim())
                     {
-                        int remain = item.Qty - rToShip;
+                        found = true;
+                        remain = item.Qty - rToShip;
                         //如果仓库不够或者没有
                         if (remain < 0)
                         {
-                            int tempQty;
+                            remain = remain * -1;
+                            double cRemain;
                             if (item.Qty > 0)
                             {
                                 //如果仓库有货但不够
-                                sl.SetCellValue($"AC{i}", shipDate, "MM/dd/yyyy");
+                                sl.SetCellValue($"AC{i}", shipDate);
+                                sl.SetCellStyle($"AC{i}", dateFormat);
                                 sl.SetCellValue($"AD{i}", item.Qty);
                                 item.QOHInternalRef = item.QOHInternalRef + " - chekced";
-                                remain = remain * -1;
+
                             }
                             foreach (var cItem in comingPOs)
                             {
                                 if (interRef == cItem.CPOInternalRef.Trim())
                                 {
-                                    remain = cItem.Qty - remain;
+                                    var aaa = comingPOs.IndexOf(cItem);
+                                    cRemain = cItem.Qty - remain;
                                     char letterDate = 'C';
                                     char letterNumber = 'D';
                                     var a = sl.GetCellValueAsString($"A{letterDate}{i}");
@@ -167,6 +220,7 @@ namespace XiaoXiong.CheckQOH
                                     {
                                         letterDate = 'E';
                                         letterNumber = 'F';
+                                        var b = sl.GetCellValueAsString($"A{letterDate}{i}");
                                         if (!string.IsNullOrWhiteSpace(sl.GetCellValueAsString($"A{letterDate}{i}")))
                                         {
                                             letterDate = 'G';
@@ -175,50 +229,112 @@ namespace XiaoXiong.CheckQOH
                                     }
 
                                     //如果coming不够或者没有
-                                    if (remain < 0)
+                                    if (cRemain < 0)
                                     {
-                                        sl.SetCellValue($"A{letterDate}{i}", cItem.ComingDate, "yyyy/mm/dd");
+                                        sl.SetCellValue($"A{letterDate}{i}", cItem.ComingDate);
+                                        sl.SetCellStyle($"A{letterDate}{i}", dateFormat);
                                         sl.SetCellValue($"A{letterNumber}{i}", cItem.Qty);
-                                        item.QOHInternalRef = item.QOHInternalRef + " - chekced";
+                                        cItem.CPOInternalRef = cItem.CPOInternalRef + " - chekced";
+                                        remain = cRemain * -1;
                                     }
-                                    else if (remain == 0)
+                                    else if (cRemain == 0)
                                     {
-                                        sl.SetCellValue($"A{letterDate}{i}", cItem.ComingDate, "yyyy/mm/dd");
+                                        sl.SetCellValue($"A{letterDate}{i}", cItem.ComingDate);
+                                        sl.SetCellStyle($"A{letterDate}{i}", dateFormat);
                                         sl.SetCellValue($"A{letterNumber}{i}", cItem.Qty);
-                                        item.QOHInternalRef = item.QOHInternalRef + " - chekced";
+                                        cItem.CPOInternalRef = cItem.CPOInternalRef + " - chekced";
+                                        //如果够ship了就不用找了
+                                        break;
                                     }
-                                    else if (remain > 0)
+                                    else if (cRemain > 0)
                                     {
-                                        sl.SetCellValue($"A{letterDate}{i}", cItem.ComingDate, "yyyy/mm/dd");
+                                        sl.SetCellValue($"A{letterDate}{i}", cItem.ComingDate);
+                                        sl.SetCellStyle($"A{letterDate}{i}", dateFormat);
                                         sl.SetCellValue($"A{letterNumber}{i}", remain);
-                                        cItem.Qty = remain;
+                                        cItem.Qty = cRemain;
+                                        //如果够ship了就不用找了
+                                        break;
                                     }
                                 }
                             }
                         }
                         else if (remain == 0)
                         {
-                            sl.SetCellValue($"AC{i}", shipDate, "MM/dd/yyyy");
+                            sl.SetCellValue($"AC{i}", shipDate);
+                            sl.SetCellStyle($"AC{i}", dateFormat);
                             sl.SetCellValue($"AD{i}", rToShip);
                             item.QOHInternalRef = item.QOHInternalRef + " - chekced";
                         }
                         else if (remain > 0)
                         {
-                            sl.SetCellValue($"AC{i}", shipDate, "MM/dd/yyyy");
+                            sl.SetCellValue($"AC{i}", shipDate);
+                            sl.SetCellStyle($"AC{i}", dateFormat);
                             sl.SetCellValue($"AD{i}", rToShip);
                             item.Qty = remain;
                         }
                         break;
                     }
                 }
+                //如果仓库没找到
+                if (!found)
+                {
+                    foreach (var cItem in comingPOs)
+                    {
+                        if (interRef == cItem.CPOInternalRef.Trim())
+                        {
+                            var aaa = comingPOs.IndexOf(cItem);
+                            remain = cItem.Qty - rToShip;
+                            char letterDate = 'C';
+                            char letterNumber = 'D';
+                            var a = sl.GetCellValueAsString($"A{letterDate}{i}");
+                            if (!string.IsNullOrWhiteSpace(sl.GetCellValueAsString($"A{letterDate}{i}")))
+                            {
+                                letterDate = 'E';
+                                letterNumber = 'F';
+                                var b = sl.GetCellValueAsString($"A{letterDate}{i}");
+                                if (!string.IsNullOrWhiteSpace(sl.GetCellValueAsString($"A{letterDate}{i}")))
+                                {
+                                    letterDate = 'G';
+                                    letterNumber = 'H';
+                                }
+                            }
+
+                            //如果coming不够或者没有
+                            if (remain < 0)
+                            {
+                                sl.SetCellValue($"A{letterDate}{i}", cItem.ComingDate);
+                                sl.SetCellStyle($"A{letterDate}{i}", dateFormat);
+                                sl.SetCellValue($"A{letterNumber}{i}", cItem.Qty);
+                                cItem.CPOInternalRef = cItem.CPOInternalRef + " - chekced";
+                                rToShip = remain * -1;
+                            }
+                            else if (remain == 0)
+                            {
+                                sl.SetCellValue($"A{letterDate}{i}", cItem.ComingDate);
+                                sl.SetCellStyle($"A{letterDate}{i}", dateFormat);
+                                sl.SetCellValue($"A{letterNumber}{i}", cItem.Qty);
+                                cItem.CPOInternalRef = cItem.CPOInternalRef + " - chekced";
+                                //如果够ship了就不用找了
+                                break;
+                            }
+                            else if (remain > 0)
+                            {
+                                sl.SetCellValue($"A{letterDate}{i}", cItem.ComingDate);
+                                sl.SetCellStyle($"A{letterDate}{i}", dateFormat);
+                                sl.SetCellValue($"A{letterNumber}{i}", rToShip);
+                                cItem.Qty = remain;
+                                //如果够ship了就不用找了
+                                break;
+                            }
+                        }
+                    }
+                }
             }
 
 
-            sl.SaveAs(@"F:\Github\storage\C#\XiaoXiong\aaa.xlsx");
-            //qOH.SaveAs(@"D:\Open Orders Report1.xlsx");
-            Console.WriteLine("Press ANY key");
+            sl.SaveAs("SO billing based on Inventory Dates.xlsx");
         }
-        
+
         public static void CheckComingOrder(int qty)
         {
 

@@ -10,6 +10,6 @@ namespace XiaoXiong.CheckQOH.Model
     {
         public int Id { get; set; }
         public string QOHInternalRef { get; set; }
-        public int Qty { get; set; }
+        public double Qty { get; set; }
     }
 }

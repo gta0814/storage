@@ -10,7 +10,7 @@ namespace XiaoXiong.CheckQOH.Model
     {
         public int Id { get; set; }
         public string CPOInternalRef { get; set; }
-        public int Qty { get; set; }
+        public double Qty { get; set; }
         public DateTime ComingDate { get; set; }
     }
 }
