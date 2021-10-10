@@ -142,16 +142,24 @@ namespace XiaoXiong.CheckQOH
         public static void ShipCheck()
         {
             Dictionary<string, int> letterIndex = new Dictionary<string, int>() { { "A", 1 }, { "B", 2 }, { "C", 3 }, { "D", 4 }, { "E", 5 }, { "F", 6 }, { "G", 7 }, { "H", 8 }, { "I", 9 }, { "J", 10 }, { "K", 11 }, { "L", 12 }, { "M", 13 }, { "N", 14 } };
+            int startRow = 2;
+            string interRef;
+            double rToShip;
+            DateTime shipDate;
+            double remain;
+            bool found;
+            List<QOH> qOHs = new List<QOH>();
+            List<ComingPO> comingPOs = new List<ComingPO>();
+            List<BillDetail> billDetails = new List<BillDetail>();
 
-            SLDocument sl = new SLDocument(@"C:\Github\storage\C#\XiaoXiong\SO billing based on Inventory Dates V1.xlsx", "Qty on Hand");
+            SLDocument sl = new SLDocument(@"F:\Github\storage\C#\XiaoXiong\SO billing based on Inventory Status Oct 08.xlsx", "Qty on Hand");
             //string dateFormat1 = "dd/MM/yyyy HH:mm:ss";
             SLStyle dateFormat = new SLStyle();
             dateFormat.FormatCode = "yyyy/m/d";
-            List<QOH> qOHs = new List<QOH>();
-            List<ComingPO> comingPOs = new List<ComingPO>();
+            
             var sheetInfo = sl.GetWorksheetStatistics();
 
-            for (int i = 2; i <= sheetInfo.EndRowIndex; i++)
+            for (int i = startRow; i <= sheetInfo.EndRowIndex; i++)
             {
                 QOH qoh = new QOH();
                 qoh.Id = i;
@@ -162,8 +170,7 @@ namespace XiaoXiong.CheckQOH
 
             sl.SelectWorksheet("Coming POs");
             sheetInfo = sl.GetWorksheetStatistics();
-
-            for (int i = 2; i <= sheetInfo.EndRowIndex; i++)
+            for (int i = startRow; i <= sheetInfo.EndRowIndex; i++)
             {
                 ComingPO comingPO = new ComingPO();
                 comingPO.Id = i;
@@ -174,14 +181,79 @@ namespace XiaoXiong.CheckQOH
             }
             comingPOs = comingPOs.OrderBy(x => x.ComingDate).ThenBy(n => n.Id).ToList();
 
+
             sl.SelectWorksheet("Detail Data for Bill Date");
             sheetInfo = sl.GetWorksheetStatistics();
-            string interRef;
-            double rToShip;
-            DateTime shipDate;
-            double remain;
-            bool found;
-            for (int i = 2; i < sheetInfo.EndRowIndex; i++)
+            
+            //把数据放到list然后reorder by date 然后再放回去
+            for (int i = startRow; i <= sheetInfo.EndRowIndex; i++)
+            {
+                
+                BillDetail billDetail = new BillDetail();
+                billDetail.Id = i;
+                billDetail.DeliveryOrder = sl.GetCellValueAsString($"B{i}");
+                billDetail.DeliveryStatus = sl.GetCellValueAsString($"C{i}");
+                billDetail.CreatedOn = sl.GetCellValueAsDateTime($"D{i}");
+                billDetail.ScheduledDate = sl.GetCellValueAsDateTime($"E{i}");
+                billDetail.ShipToPartnerInterRef = sl.GetCellValueAsString($"F{i}");
+                billDetail.ShipToPartnerName = sl.GetCellValueAsString($"G{i}");
+                billDetail.SalesOrder = sl.GetCellValueAsString($"H{i}");
+                billDetail.SalesPerson = sl.GetCellValueAsString($"I{i}");
+                billDetail.ProductInternalCategory = sl.GetCellValueAsString($"J{i}");
+                billDetail.Product = sl.GetCellValueAsString($"K{i}");
+                billDetail.ProductInternalRef = sl.GetCellValueAsString($"L{i}");
+                billDetail.UoM = sl.GetCellValueAsString($"M{i}");
+                billDetail.QuantityOrdered = sl.GetCellValueAsDouble($"N{i}");
+                billDetail.QuantityDelivered = sl.GetCellValueAsDouble($"O{i}");
+                billDetail.QuantityInvoiced = sl.GetCellValueAsDouble($"P{i}");
+                billDetail.UniPrice = sl.GetCellValueAsDecimal($"Q{i}");
+                billDetail.OrderLineSubtotal = sl.GetCellValueAsDecimal($"R{i}");
+                billDetail.Category = sl.GetCellValueAsString($"S{i}");
+                billDetail.ProductMajorClassification = sl.GetCellValueAsString($"T{i}");
+                billDetail.RemainingToShip = sl.GetCellValueAsDouble($"U{i}");
+                billDetail.RemainingToInvoice = sl.GetCellValueAsDecimal($"V{i}");
+                billDetail.ReservedQuantity = sl.GetCellValueAsDecimal($"W{i}");
+                billDetail.Reserved = sl.GetCellValueAsDecimal($"X{i}");
+                billDetail.Unreserved = sl.GetCellValueAsDecimal($"Y{i}");
+                billDetail.StatusMonth = sl.GetCellValueAsString($"Z{i}");
+                billDetail.StatusRange = sl.GetCellValueAsString($"AA{i}");
+                billDetail.SalesOrderCustomer = sl.GetCellValueAsString($"AB{i}");
+                billDetails.Add(billDetail);
+            }
+            billDetails = billDetails.OrderBy(x => x.ProductInternalRef).ThenBy(n => n.ProductInternalRef).ToList();
+            for (int i = startRow; i <= billDetails.Count; i++)
+            {
+                int j = i - startRow;
+                sl.SetCellValue($"B{i}", billDetails[j].DeliveryOrder);
+                sl.SetCellValue($"C{i}", billDetails[j].DeliveryStatus);
+                sl.SetCellValue($"D{i}", billDetails[j].CreatedOn);
+                sl.SetCellValue($"E{i}", billDetails[j].ScheduledDate);
+                sl.SetCellValue($"F{i}", billDetails[j].ShipToPartnerInterRef);
+                sl.SetCellValue($"G{i}", billDetails[j].ShipToPartnerName);
+                sl.SetCellValue($"H{i}", billDetails[j].SalesOrder);
+                sl.SetCellValue($"I{i}", billDetails[j].SalesPerson);
+                sl.SetCellValue($"J{i}", billDetails[j].ProductInternalCategory);
+                sl.SetCellValue($"K{i}", billDetails[j].Product);
+                sl.SetCellValue($"L{i}", billDetails[j].ProductInternalRef);
+                sl.SetCellValue($"M{i}", billDetails[j].UoM);
+                sl.SetCellValue($"N{i}", (int)billDetails[j].QuantityOrdered);
+                sl.SetCellValue($"O{i}", (int)billDetails[j].QuantityDelivered);
+                sl.SetCellValue($"P{i}", (int)billDetails[j].QuantityInvoiced);
+                sl.SetCellValue($"Q{i}", (decimal)billDetails[j].UniPrice);
+                sl.SetCellValue($"R{i}", (decimal)billDetails[j].OrderLineSubtotal);
+                sl.SetCellValue($"S{i}", billDetails[j].Category);
+                sl.SetCellValue($"T{i}", billDetails[j].ProductMajorClassification);
+                sl.SetCellValue($"U{i}", billDetails[j].RemainingToShip);
+                sl.SetCellValue($"V{i}", (decimal)billDetails[j].RemainingToInvoice);
+                sl.SetCellValue($"W{i}", (decimal)billDetails[j].ReservedQuantity);
+                sl.SetCellValue($"X{i}", (decimal)billDetails[j].Reserved);
+                sl.SetCellValue($"Y{i}", (decimal)billDetails[j].Unreserved);
+                sl.SetCellValue($"Z{i}", billDetails[j].StatusMonth);
+                sl.SetCellValue($"AA{i}", billDetails[j].StatusRange);
+                sl.SetCellValue($"AB{i}", billDetails[j].SalesOrderCustomer);
+            }
+
+            for (int i = startRow; i < sheetInfo.EndRowIndex; i++)
             {
                 found = false;
                 shipDate = sl.GetCellValueAsDateTime($"E{i}");
@@ -211,7 +283,7 @@ namespace XiaoXiong.CheckQOH
                             {
                                 if (interRef == cItem.CPOInternalRef.Trim())
                                 {
-                                    var aaa = comingPOs.IndexOf(cItem);
+                                    //var aaa = comingPOs.IndexOf(cItem);
                                     cRemain = cItem.Qty - remain;
                                     char letterDate = 'C';
                                     char letterNumber = 'D';
@@ -282,7 +354,7 @@ namespace XiaoXiong.CheckQOH
                     {
                         if (interRef == cItem.CPOInternalRef.Trim())
                         {
-                            var aaa = comingPOs.IndexOf(cItem);
+                            //var aaa = comingPOs.IndexOf(cItem);
                             remain = cItem.Qty - rToShip;
                             char letterDate = 'C';
                             char letterNumber = 'D';
@@ -331,8 +403,7 @@ namespace XiaoXiong.CheckQOH
                 }
             }
 
-
-            sl.SaveAs("SO billing based on Inventory Dates.xlsx");
+            sl.SaveAs("ddd.xlsx");
         }
 
         public static void CheckComingOrder(int qty)

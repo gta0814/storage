@@ -12,7 +12,7 @@ namespace XiaoXiong.ConsoleApp
         static void Main(string[] args)
         {
 
-            Console.WriteLine("计算中......稍等......");
+            Console.WriteLine("耐心等会啊......");
             CheckQOH.CheckQOH.ShipCheck();
         }
     }
