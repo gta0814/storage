@@ -1,0 +1,1181 @@
+<?xml version="1.0"?>
+<Policy xmlns="http://guidewire.com/pc/gx/ama.gx.policy_model" xmlns:ns0="http://guidewire.com/pc/gx/ama.gx.agentdata_model" xmlns:ns1="http://guidewire.com/pc/gx/ama.gx.billingdata_model" xmlns:ns2="http://guidewire.com/pc/gx/ama.gx.branchdata_model" xmlns:ns3="http://guidewire.com/pc/gx/ama.gx.addressdata_model" xmlns:ns4="http://guidewire.com/pc/gx/ama.gx.documentdata_model" xmlns:ns5="http://guidewire.com/pc/gx/ama.gx.insureddata_model" xmlns:ns6="http://guidewire.com/pc/gx/ama.gx.propertydata_model">
+  <Agent>
+    <ns0:AgentId>lani.walburger</ns0:AgentId>
+    <ns0:AgentName>Lani Walburger</ns0:AgentName>
+  </Agent>
+  <ApplicationInformation>
+    <BusinessInsuranceClaim xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <BussinesSource xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <CriminalOffenseFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <DeclinedBusinessInsuranceFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <DeclinedInsuranceDesc xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <DeclinedInsuranceFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <DirectSettlementsFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ProductsServicesFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <PropertyClaim xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  </ApplicationInformation>
+  <Auto xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <Billing>
+    <ns1:AccountName>Ms. Mary Paige Atkinson</ns1:AccountName>
+    <ns1:AccountNumber>C007395405</ns1:AccountNumber>
+    <ns1:BankAccountNumber>0033529</ns1:BankAccountNumber>
+    <ns1:BankNumber>0002</ns1:BankNumber>
+    <ns1:DelinquencyAmount xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns1:DelinquencyDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns1:DisbursementAmount>0.00</ns1:DisbursementAmount>
+    <ns1:DueAmount>315.79</ns1:DueAmount>
+    <ns1:DueDate>2018-05-16T00:00:00-06:00</ns1:DueDate>
+    <ns1:NSFAmount xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns1:NSFDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns1:NSFFee>0.00</ns1:NSFFee>
+    <ns1:PADServiceFee>180.45</ns1:PADServiceFee>
+    <ns1:PADServiceFeePercent>5.0</ns1:PADServiceFeePercent>
+    <ns1:PayerName>MATTHEW MACPHERSON</ns1:PayerName>
+    <ns1:PaymentAmount>315.79</ns1:PaymentAmount>
+    <ns1:PaymentDate>2018-04-16T00:00:00-06:00</ns1:PaymentDate>
+    <ns1:PaymentPlan>AMA 12 Pay Plan</ns1:PaymentPlan>
+    <ns1:PaymentSchedule>
+      <ns1:Entry>
+        <ns1:Amount>315.79</ns1:Amount>
+        <ns1:DueDate>2018-05-16T00:00:00-06:00</ns1:DueDate>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns1:Amount>315.79</ns1:Amount>
+        <ns1:DueDate>2018-06-16T00:00:00-06:00</ns1:DueDate>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns1:Amount>315.79</ns1:Amount>
+        <ns1:DueDate>2018-07-16T00:00:00-06:00</ns1:DueDate>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns1:Amount>315.79</ns1:Amount>
+        <ns1:DueDate>2018-08-16T00:00:00-06:00</ns1:DueDate>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns1:Amount>315.79</ns1:Amount>
+        <ns1:DueDate>2018-09-16T00:00:00-06:00</ns1:DueDate>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns1:Amount>315.79</ns1:Amount>
+        <ns1:DueDate>2018-10-16T00:00:00-06:00</ns1:DueDate>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns1:Amount>315.79</ns1:Amount>
+        <ns1:DueDate>2018-11-16T00:00:00-07:00</ns1:DueDate>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns1:Amount>315.79</ns1:Amount>
+        <ns1:DueDate>2018-12-16T00:00:00-07:00</ns1:DueDate>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns1:Amount>315.78</ns1:Amount>
+        <ns1:DueDate>2019-01-16T00:00:00-07:00</ns1:DueDate>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns1:Amount>315.78</ns1:Amount>
+        <ns1:DueDate>2019-02-16T00:00:00-07:00</ns1:DueDate>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns1:Amount>315.78</ns1:Amount>
+        <ns1:DueDate>2019-03-16T00:00:00-06:00</ns1:DueDate>
+      </ns1:Entry>
+    </ns1:PaymentSchedule>
+    <ns1:PolicyTermRemainingBalance>3,473.66</ns1:PolicyTermRemainingBalance>
+    <ns1:PreviousSixMonthTerm>false</ns1:PreviousSixMonthTerm>
+    <ns1:RelatedPolicy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns1:TotalOutstandingAmount>0.00</ns1:TotalOutstandingAmount>
+    <ns1:totalPaidAmount>315.79</ns1:totalPaidAmount>
+    <ns1:TotalPremiumAmount>3,609.00</ns1:TotalPremiumAmount>
+    <ns1:TotalTransactionAmount>0.00</ns1:TotalTransactionAmount>
+    <ns1:TransitNumber>30023</ns1:TransitNumber>
+    <ns1:WithdrawalDate>16</ns1:WithdrawalDate>
+  </Billing>
+  <Branch>
+    <ns2:BranchAddress>
+      <ns3:AddressLine1>9520 42 AVE</ns3:AddressLine1>
+      <ns3:AddressLine2>Edmonton, AB T6E 5Y4</ns3:AddressLine2>
+      <ns3:AddressLine3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns3:AddressLine4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns3:City>Edmonton</ns3:City>
+      <ns3:Country>Canada</ns3:Country>
+      <ns3:PostalCode>T6E 5Y4</ns3:PostalCode>
+      <ns3:ProvinceCode>AB</ns3:ProvinceCode>
+      <ns3:ProvinceDescription>Alberta</ns3:ProvinceDescription>
+    </ns2:BranchAddress>
+    <ns2:BranchId>86</ns2:BranchId>
+    <ns2:BranchName>86-Contact Sales Ctr</ns2:BranchName>
+  </Branch>
+  <BusinessNumberAndExt xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <CancellationDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <CancellationMethod xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <CancellationReason xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <CancellationSource xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <CommercialProperty xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <DocumentData>
+    <ns4:Author>
+      <ns4:AgentFlag>false</ns4:AgentFlag>
+      <ns4:AuthorFirstName>System</ns4:AuthorFirstName>
+      <ns4:AuthorLastName>User</ns4:AuthorLastName>
+      <ns4:LoginId>sys</ns4:LoginId>
+    </ns4:Author>
+    <ns4:ContentServer>crp-csapp-pp01</ns4:ContentServer>
+    <ns4:ContentServerFileName/>
+    <ns4:CustomerInBranchFlag>false</ns4:CustomerInBranchFlag>
+    <ns4:DocumentID>DLAI00</ns4:DocumentID>
+    <ns4:Filename>AMA\src\printreport\genAutoDocSet_xml.p</ns4:Filename>
+    <ns4:GuidewireServer>INS-P-GWPB-V01</ns4:GuidewireServer>
+    <ns4:isPrintedOvernight>yes</ns4:isPrintedOvernight>
+  </DocumentData>
+  <ExpiryDate>2019-04-29T00:01:00-06:00</ExpiryDate>
+  <HomePhoneNumber>780-433-8093</HomePhoneNumber>
+  <InsuredInfo>
+    <Entry>
+      <ns5:BirthDate>1986-11-29T00:00:00-07:00</ns5:BirthDate>
+      <ns5:ContactType>Individual</ns5:ContactType>
+      <ns5:CreditCheck>Not Available</ns5:CreditCheck>
+      <ns5:EstateOf>false</ns5:EstateOf>
+      <ns5:FirstName>Mary</ns5:FirstName>
+      <ns5:LastName>Atkinson</ns5:LastName>
+      <ns5:MembershipExpiryDate>2019-02-28T00:00:00-07:00</ns5:MembershipExpiryDate>
+      <ns5:MembershipNoticeFlag>false</ns5:MembershipNoticeFlag>
+      <ns5:MembershipNumber>6202721882730009</ns5:MembershipNumber>
+      <ns5:MiddleName>Paige</ns5:MiddleName>
+      <ns5:Occupation>Lawyer</ns5:Occupation>
+      <ns5:PrimaryInsured>true</ns5:PrimaryInsured>
+      <ns5:Suffix xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </Entry>
+    <Entry>
+      <ns5:BirthDate>1985-07-23T01:00:00-06:00</ns5:BirthDate>
+      <ns5:ContactType>Individual</ns5:ContactType>
+      <ns5:CreditCheck>Not Available</ns5:CreditCheck>
+      <ns5:EstateOf>false</ns5:EstateOf>
+      <ns5:FirstName>Matthew</ns5:FirstName>
+      <ns5:LastName>MacPherson</ns5:LastName>
+      <ns5:MembershipExpiryDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns5:MembershipNoticeFlag>false</ns5:MembershipNoticeFlag>
+      <ns5:MembershipNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns5:MiddleName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns5:Occupation>Lawyer</ns5:Occupation>
+      <ns5:PrimaryInsured>false</ns5:PrimaryInsured>
+      <ns5:Suffix xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </Entry>
+  </InsuredInfo>
+  <Jurisdiction>AB</Jurisdiction>
+  <Language>en_US</Language>
+  <LineOfBusiness>Personal Property</LineOfBusiness>
+  <MailingAddress>
+    <ns3:AddressLine1>11618 77 AVE NORTH WEST</ns3:AddressLine1>
+    <ns3:AddressLine2>EDMONTON, AB T6G 0M3</ns3:AddressLine2>
+    <ns3:AddressLine3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns3:AddressLine4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns3:City>EDMONTON</ns3:City>
+    <ns3:Country>Canada</ns3:Country>
+    <ns3:PostalCode>T6G 0M3</ns3:PostalCode>
+    <ns3:ProvinceCode>AB</ns3:ProvinceCode>
+    <ns3:ProvinceDescription>Alberta</ns3:ProvinceDescription>
+  </MailingAddress>
+  <MobilePhoneNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <OriginalInceptionDate>2013-04-29T01:00:00-06:00</OriginalInceptionDate>
+  <PolicyNumber>P37733</PolicyNumber>
+  <PolicyStatus>PolicyChange</PolicyStatus>
+  <PolicyTermLength>Annual</PolicyTermLength>
+  <PolicyTermStartDate>2018-04-29T00:01:00-06:00</PolicyTermStartDate>
+  <PolicyVersion>180423000966</PolicyVersion>
+  <PolicyVersionEffectiveDate>2018-05-01T00:01:00-06:00</PolicyVersionEffectiveDate>
+  <PreviousInsurerName>Alberta Motor Association Insurance Company - 451</PreviousInsurerName>
+  <PreviousPolicyExpirationDate>2013-04-29T00:00:00-06:00</PreviousPolicyExpirationDate>
+  <PreviousPolicyNumber>P26428</PreviousPolicyNumber>
+  <PrimaryEmail xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <PrimaryPhone xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <ProductType>Property</ProductType>
+  <Property>
+    <ns6:ClaimHistory xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns6:InsuranceHistory>
+      <ns6:PriorCarrier>Alberta Motor Association Insurance Company - 451</ns6:PriorCarrier>
+      <ns6:PriorCarrierExpiryDate>2013-04-29T00:00:00-06:00</ns6:PriorCarrierExpiryDate>
+      <ns6:PriorInsurancePolicyNumber>P26428</ns6:PriorInsurancePolicyNumber>
+    </ns6:InsuranceHistory>
+    <ns6:LiabilityQuestions>
+      <ns6:AdditionalLocationExtensionFlag>false</ns6:AdditionalLocationExtensionFlag>
+      <ns6:AggressivePetDescription xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns6:AggressivePetFlag>false</ns6:AggressivePetFlag>
+      <ns6:ApplyPesticidesAway>false</ns6:ApplyPesticidesAway>
+      <ns6:BoardHorses>false</ns6:BoardHorses>
+      <ns6:BoardTrainHorses>false</ns6:BoardTrainHorses>
+      <ns6:ChemicalsDesc xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns6:CustomFarming>false</ns6:CustomFarming>
+      <ns6:CustomFarmingAnnualGross xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns6:CustomFarmingDescription xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns6:CustomFarmingIncomeExceed>false</ns6:CustomFarmingIncomeExceed>
+      <ns6:GravelPitOperatedByOthers>false</ns6:GravelPitOperatedByOthers>
+      <ns6:GravelPitOperation>false</ns6:GravelPitOperation>
+      <ns6:HasOtherOccupations>false</ns6:HasOtherOccupations>
+      <ns6:LandUsedForFarming>No, I do not.</ns6:LandUsedForFarming>
+      <ns6:NumberOfAcres xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns6:NumberOfBoardHorses xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns6:NumberOfBoardTrainHorses xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns6:NumberOfFarmEmployees>0</ns6:NumberOfFarmEmployees>
+      <ns6:OfferHayOrSleighRides>false</ns6:OfferHayOrSleighRides>
+      <ns6:OfferSalesOfFarmProduce>false</ns6:OfferSalesOfFarmProduce>
+      <ns6:OtherOccupationsDesc xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns6:OtherOccupationsOnPremise>false</ns6:OtherOccupationsOnPremise>
+      <ns6:PesticidesDesc xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns6:ProcSellStoreChemicals>false</ns6:ProcSellStoreChemicals>
+      <ns6:ProvideParkingOrStorage>false</ns6:ProvideParkingOrStorage>
+      <ns6:ProvideUPickSales>false</ns6:ProvideUPickSales>
+      <ns6:ProvideWeldAndMachineRepair>false</ns6:ProvideWeldAndMachineRepair>
+      <ns6:PublicMowingOrSnowPlowing>false</ns6:PublicMowingOrSnowPlowing>
+    </ns6:LiabilityQuestions>
+    <ns6:Location>
+      <ns6:Entry>
+        <ns6:LocationAddress>
+          <ns3:AddressLine1>11618 77 AVE NORTH WEST</ns3:AddressLine1>
+          <ns3:AddressLine2>EDMONTON, AB T6G 0M3</ns3:AddressLine2>
+          <ns3:AddressLine3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns3:AddressLine4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns3:City>EDMONTON</ns3:City>
+          <ns3:Country>Canada</ns3:Country>
+          <ns3:PostalCode>T6G 0M3</ns3:PostalCode>
+          <ns3:ProvinceCode>AB</ns3:ProvinceCode>
+          <ns3:ProvinceDescription>Alberta</ns3:ProvinceDescription>
+        </ns6:LocationAddress>
+        <ns6:LocationNumber>1</ns6:LocationNumber>
+        <ns6:OtherLocationAddress>
+          <ns6:AddressType>None</ns6:AddressType>
+          <ns6:Block xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Lot xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Meridian xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Plan xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Quarter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Range xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Section xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Township xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </ns6:OtherLocationAddress>
+        <ns6:Risk>
+          <ns6:AdditionalInterest>
+            <ns6:Entry>
+              <ns6:Address>
+                <ns3:AddressLine1>10864 Whyte Ave</ns3:AddressLine1>
+                <ns3:AddressLine2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns3:AddressLine3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns3:AddressLine4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns3:City>Edmonton</ns3:City>
+                <ns3:Country>Canada</ns3:Country>
+                <ns3:PostalCode>T6E 2B3</ns3:PostalCode>
+                <ns3:ProvinceCode>AB</ns3:ProvinceCode>
+                <ns3:ProvinceDescription>Alberta</ns3:ProvinceDescription>
+              </ns6:Address>
+              <ns6:CreatedDate>2018-05-01T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Id>360144</ns6:Id>
+              <ns6:InterestType>MORTGAGEE1</ns6:InterestType>
+              <ns6:IsNew>true</ns6:IsNew>
+              <ns6:Name>Toronto Dominion Bank</ns6:Name>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:Address>
+                <ns3:AddressLine1>10864 White Ave</ns3:AddressLine1>
+                <ns3:AddressLine2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns3:AddressLine3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns3:AddressLine4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns3:City>Edmonton</ns3:City>
+                <ns3:Country>Canada</ns3:Country>
+                <ns3:PostalCode>T6E 2B3</ns3:PostalCode>
+                <ns3:ProvinceCode>AB</ns3:ProvinceCode>
+                <ns3:ProvinceDescription>Alberta</ns3:ProvinceDescription>
+              </ns6:Address>
+              <ns6:CreatedDate>2018-05-01T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:DeletedDate>2018-05-01T00:01:00-06:00</ns6:DeletedDate>
+              <ns6:Id>360144</ns6:Id>
+              <ns6:InterestType>MORTGAGEE1</ns6:InterestType>
+              <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Name>Toronto Dominion Bank</ns6:Name>
+            </ns6:Entry>
+          </ns6:AdditionalInterest>
+          <ns6:AlarmSystem>None</ns6:AlarmSystem>
+          <ns6:AuxiliaryMotor xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:BasementFinished>true</ns6:BasementFinished>
+          <ns6:BoatHP xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:BoatLength xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:BoatMaxSpeed xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:BoatType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:BuildingType>Detached</ns6:BuildingType>
+          <ns6:BusinessAtLocation xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:CELOnFile>false</ns6:CELOnFile>
+          <ns6:ConstructionRenovation>false</ns6:ConstructionRenovation>
+          <ns6:Coverages>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Deductible</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>1,000</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_PackageForm_AMA</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible>1,000</ns6:Deductible>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Package Form for AMA</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Deductible</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>1,000</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>255,600</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovA_Dwelling</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible>1,000</ns6:Deductible>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage A - Dwelling Building</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>255,600</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Deductible</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>1,000</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>255,600</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovA_DwellingW</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible>1,000</ns6:Deductible>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage A - Dwelling Building Weather</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>255,600</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>38,340</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit %</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>0.15</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovB_DetPrivateStruct</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage B - Detached Private Structures</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>38,340</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>38,340</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit %</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>0.15</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovB_DetPrivateStructW</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage B - Detached Private Structures Weather</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>38,340</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>191,700</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit %</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>0.75</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Deductible</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>1,000</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovC_PersonalProperty</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible>1,000</ns6:Deductible>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage C - Personal Property</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>191,700</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>191,700</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit %</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>0.75</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Deductible</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>1,000</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovC_PersonalPropertyW</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible>1,000</ns6:Deductible>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage C - Personal Property Weather</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>191,700</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>51,120</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit %</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>0.2</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovD_AddLivingExpenses</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage D - Additional Living Expenses</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>51,120</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>2,000,000</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_MAR_CovE_PersonalLiability</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage E - Personal Liability</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>2,000,000</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>5,000</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_MAR_CovF_VoluntaryMedPayments</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage F - Voluntary Medical Payments</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>5,000</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>1,000</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovG_VoluntaryPropDamage</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage G - Voluntary Payments for Property Damage</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>1,000</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+          </ns6:Coverages>
+          <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+          <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:DeviceType>Circuit Breaker</ns6:DeviceType>
+          <ns6:Discount>
+            <ns6:Entry>Loyalty Discount</ns6:Entry>
+          </ns6:Discount>
+          <ns6:DwellingAge>68</ns6:DwellingAge>
+          <ns6:DwellingValue>255600</ns6:DwellingValue>
+          <ns6:Endorsement>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:AdditionalLimit xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Address xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:AppraisalDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:CustomFarming xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DateOfBirth xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Limit</ns6:Description>
+                  <ns6:ExposureCost xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:Heated xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:ID xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:LienholderLessor xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Make xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Model xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Premium xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:ProfessionalUse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:RiskFixedId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:ScheduleType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:SerialNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:SubType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>20,000</ns6:Value>
+                  <ns6:Vin xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Year xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:AdditionalLimit xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Address xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:AppraisalDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:CustomFarming xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DateOfBirth xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Zone</ns6:Description>
+                  <ns6:ExposureCost xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:Heated xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:ID xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:LienholderLessor xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Make xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Model xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Premium xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:ProfessionalUse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:RiskFixedId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:ScheduleType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:SerialNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:SubType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>AB2</ns6:Value>
+                  <ns6:Vin xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Year xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:Code>HO_AMA_SewerBackup</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Enhanced Water Endorsement</ns6:Description>
+              <ns6:HasChanged>false</ns6:HasChanged>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>20,000</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+          </ns6:Endorsement>
+          <ns6:EquipDescription xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:EWEIneligible>false</ns6:EWEIneligible>
+          <ns6:FixedId>32525</ns6:FixedId>
+          <ns6:Foundation>Basement Concrete</ns6:Foundation>
+          <ns6:InformedAboutInspection>true</ns6:InformedAboutInspection>
+          <ns6:IsNew>false</ns6:IsNew>
+          <ns6:IsSubstituted>false</ns6:IsSubstituted>
+          <ns6:Lengthft>1076</ns6:Lengthft>
+          <ns6:Make xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Model xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:NumberOfAddInterest>1</ns6:NumberOfAddInterest>
+          <ns6:NumberOfAmps>Over 100 Amps</ns6:NumberOfAmps>
+          <ns6:NumberOfClaim xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:NumberOfFamilies>1</ns6:NumberOfFamilies>
+          <ns6:NumberOfMortgages>1</ns6:NumberOfMortgages>
+          <ns6:OccupancyType>Primary Residence</ns6:OccupancyType>
+          <ns6:OperateBusiness>false</ns6:OperateBusiness>
+          <ns6:PackageType>Comprehensive (HOC)</ns6:PackageType>
+          <ns6:PersonalPropertyLimit>0</ns6:PersonalPropertyLimit>
+          <ns6:PlumbingType>Plastic</ns6:PlumbingType>
+          <ns6:PrimaryHeating>Central Furnace/Natural Gas</ns6:PrimaryHeating>
+          <ns6:PrimaryResidenceInsured>true</ns6:PrimaryResidenceInsured>
+          <ns6:PriorDamage>false</ns6:PriorDamage>
+          <ns6:ProtectionType>Hydrant</ns6:ProtectionType>
+          <ns6:RiskNumber>1</ns6:RiskNumber>
+          <ns6:RiskType>Homeowner</ns6:RiskType>
+          <ns6:RV1MonthPlusInUSA>false</ns6:RV1MonthPlusInUSA>
+          <ns6:RVParked3MonthPlus>false</ns6:RVParked3MonthPlus>
+          <ns6:RVPermanentlyLocated>false</ns6:RVPermanentlyLocated>
+          <ns6:RVTempResidence>false</ns6:RVTempResidence>
+          <ns6:SecondaryHeating>None</ns6:SecondaryHeating>
+          <ns6:SerialNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:SewerBackupProtectionSystem>None</ns6:SewerBackupProtectionSystem>
+          <ns6:SqFt3Wall>0</ns6:SqFt3Wall>
+          <ns6:Surcharge xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:TotalSquareFootage>1076</ns6:TotalSquareFootage>
+          <ns6:TrailerMake xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:TrailerSerialNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:TrailerYear xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:UnitType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:UnrepairedDamage>false</ns6:UnrepairedDamage>
+          <ns6:Widthft xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:WiringType>Copper Wiring</ns6:WiringType>
+          <ns6:YearAtCurrentLocation>0</ns6:YearAtCurrentLocation>
+          <ns6:YearBuilt>1950</ns6:YearBuilt>
+        </ns6:Risk>
+      </ns6:Entry>
+      <ns6:Entry>
+        <ns6:LocationAddress>
+          <ns3:AddressLine1>11622 77 AVE NORTH WEST</ns3:AddressLine1>
+          <ns3:AddressLine2>EDMONTON, AB T6G 0M3</ns3:AddressLine2>
+          <ns3:AddressLine3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns3:AddressLine4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns3:City>EDMONTON</ns3:City>
+          <ns3:Country>Canada</ns3:Country>
+          <ns3:PostalCode>T6G 0M3</ns3:PostalCode>
+          <ns3:ProvinceCode>AB</ns3:ProvinceCode>
+          <ns3:ProvinceDescription>Alberta</ns3:ProvinceDescription>
+        </ns6:LocationAddress>
+        <ns6:LocationNumber>2</ns6:LocationNumber>
+        <ns6:OtherLocationAddress>
+          <ns6:AddressType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Block xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Lot xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Meridian xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Plan xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Quarter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Range xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Section xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Township xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </ns6:OtherLocationAddress>
+        <ns6:Risk>
+          <ns6:AdditionalInterest>
+            <ns6:Entry>
+              <ns6:Address>
+                <ns3:AddressLine1>10835 51 Ave NW</ns3:AddressLine1>
+                <ns3:AddressLine2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns3:AddressLine3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns3:AddressLine4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns3:City>Edmonton</ns3:City>
+                <ns3:Country>Canada</ns3:Country>
+                <ns3:PostalCode>T6H5T1</ns3:PostalCode>
+                <ns3:ProvinceCode>AB</ns3:ProvinceCode>
+                <ns3:ProvinceDescription>Alberta</ns3:ProvinceDescription>
+              </ns6:Address>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Id>290899</ns6:Id>
+              <ns6:InterestType>MORTGAGEE1</ns6:InterestType>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Name>Scotia Bank</ns6:Name>
+            </ns6:Entry>
+          </ns6:AdditionalInterest>
+          <ns6:AlarmSystem xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:AuxiliaryMotor xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:BasementFinished>true</ns6:BasementFinished>
+          <ns6:BoatHP xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:BoatLength xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:BoatMaxSpeed xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:BoatType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:BuildingType>Detached</ns6:BuildingType>
+          <ns6:BusinessAtLocation xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:CELOnFile>false</ns6:CELOnFile>
+          <ns6:ConstructionRenovation>false</ns6:ConstructionRenovation>
+          <ns6:Coverages>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Deductible</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>2,500</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_PackageForm_AMA</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible>2,500</ns6:Deductible>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Package Form for AMA</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Deductible</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>2,500</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>369,500</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovA_Dwelling</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible>2,500</ns6:Deductible>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage A - Dwelling Building</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>369,500</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Deductible</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>2,500</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>369,500</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovA_DwellingW</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible>2,500</ns6:Deductible>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage A - Dwelling Building Weather</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>369,500</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>36,950</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit %</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>0.1</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovB_FEC</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage B - Detached Private Structures</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>36,950</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>36,950</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit %</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>0.1</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovB_FECW</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage B - Detached Private Structures Weather</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>36,950</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>36,950</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit %</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>0.1</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Deductible</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>2,500</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovC_FEC</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible>2,500</ns6:Deductible>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage C - Personal Property</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>36,950</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>36,950</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit %</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>0.1</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Deductible</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>2,500</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovC_FECW</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible>2,500</ns6:Deductible>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage C - Personal Property Weather</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>36,950</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>0</ns6:Value>
+                </ns6:Entry>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Base Limit %</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>0</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovD_AddLivingExpenses</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage D - Additional Living Expenses</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>0</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>2,000,000</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_MAR_CovE_PersonalLiability</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage E - Personal Liability</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>2,000,000</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>5,000</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_MAR_CovF_VoluntaryMedPayments</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage F - Voluntary Medical Payments</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>5,000</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+            <ns6:Entry>
+              <ns6:AdditionalInformation>
+                <ns6:Entry>
+                  <ns6:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Description>Limit</ns6:Description>
+                  <ns6:HasChanged>false</ns6:HasChanged>
+                  <ns6:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <ns6:Value>1,000</ns6:Value>
+                </ns6:Entry>
+              </ns6:AdditionalInformation>
+              <ns6:AdditionalLocations xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Code>HO_AMA_CovG_VoluntaryPropDamage</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Coverage G - Voluntary Payments for Property Damage</ns6:Description>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit>1,000</ns6:Limit>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+          </ns6:Coverages>
+          <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+          <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:DeviceType>Circuit Breaker</ns6:DeviceType>
+          <ns6:Discount xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:DwellingAge>68</ns6:DwellingAge>
+          <ns6:DwellingValue>369500</ns6:DwellingValue>
+          <ns6:Endorsement>
+            <ns6:Entry>
+              <ns6:Code>HO_AMA_VacancyPermit</ns6:Code>
+              <ns6:CreatedDate>2018-04-29T00:01:00-06:00</ns6:CreatedDate>
+              <ns6:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Description>Vacancy Permit</ns6:Description>
+              <ns6:HasChanged>false</ns6:HasChanged>
+              <ns6:IsNew>false</ns6:IsNew>
+              <ns6:Limit xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:Premium>0</ns6:Premium>
+            </ns6:Entry>
+          </ns6:Endorsement>
+          <ns6:EquipDescription xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:EWEIneligible>false</ns6:EWEIneligible>
+          <ns6:FixedId>360701</ns6:FixedId>
+          <ns6:Foundation>Basement Concrete</ns6:Foundation>
+          <ns6:InformedAboutInspection>true</ns6:InformedAboutInspection>
+          <ns6:IsNew>false</ns6:IsNew>
+          <ns6:IsSubstituted>false</ns6:IsSubstituted>
+          <ns6:Lengthft>1680</ns6:Lengthft>
+          <ns6:Make xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Model xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:NumberOfAddInterest xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:NumberOfAmps>Over 100 Amps</ns6:NumberOfAmps>
+          <ns6:NumberOfClaim xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:NumberOfFamilies>1</ns6:NumberOfFamilies>
+          <ns6:NumberOfMortgages>1</ns6:NumberOfMortgages>
+          <ns6:OccupancyType>Vacant</ns6:OccupancyType>
+          <ns6:OperateBusiness xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:PackageType>Fire &amp; Extended Coverage Form</ns6:PackageType>
+          <ns6:PersonalPropertyLimit>0</ns6:PersonalPropertyLimit>
+          <ns6:PlumbingType>Plastic</ns6:PlumbingType>
+          <ns6:PrimaryHeating>Central Furnace/Natural Gas</ns6:PrimaryHeating>
+          <ns6:PrimaryResidenceInsured xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:PriorDamage>false</ns6:PriorDamage>
+          <ns6:ProtectionType>Hydrant</ns6:ProtectionType>
+          <ns6:RiskNumber>2</ns6:RiskNumber>
+          <ns6:RiskType>Fire &amp; Extended Coverage</ns6:RiskType>
+          <ns6:RV1MonthPlusInUSA xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:RVParked3MonthPlus xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:RVPermanentlyLocated xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:RVTempResidence xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:SecondaryHeating>None</ns6:SecondaryHeating>
+          <ns6:SerialNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:SewerBackupProtectionSystem xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:SqFt3Wall xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:Surcharge xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:TotalSquareFootage xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:TrailerMake xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:TrailerSerialNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:TrailerYear xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:UnitType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:UnrepairedDamage>false</ns6:UnrepairedDamage>
+          <ns6:Widthft xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:WiringType>Copper Wiring</ns6:WiringType>
+          <ns6:YearAtCurrentLocation xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns6:YearBuilt>1950</ns6:YearBuilt>
+        </ns6:Risk>
+      </ns6:Entry>
+    </ns6:Location>
+    <ns6:PolicyCoverage xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  </Property>
+  <PublicID>pc:726263</PublicID>
+  <QuoteNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <ReasonSEF39Removed xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <ReferencePolicyNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <RelatedPolicy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <TermNumber>1</TermNumber>
+  <TransactionCode>PolicyCorrection;</TransactionCode>
+  <TransactionDescription>Policy Correction</TransactionDescription>
+</Policy>

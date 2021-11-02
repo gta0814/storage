@@ -1,0 +1,809 @@
+<?xml version="1.0"?>
+<Policy xmlns="http://guidewire.com/pc/gx/ama.gx.policy_model" xmlns:ns0="http://guidewire.com/pc/gx/ama.gx.agentdata_model" xmlns:ns1="http://guidewire.com/pc/gx/ama.gx.autodata_model" xmlns:ns10="http://guidewire.com/pc/gx/ama.gx.insureddata_model" xmlns:ns2="http://guidewire.com/pc/gx/ama.gx.applicationinformationdata_model" xmlns:ns3="http://guidewire.com/pc/gx/ama.gx.claimdata_model" xmlns:ns4="http://guidewire.com/pc/gx/ama.gx.driverdata_model" xmlns:ns5="http://guidewire.com/pc/gx/ama.gx.vehicledata_model" xmlns:ns6="http://guidewire.com/pc/gx/ama.gx.addressdata_model" xmlns:ns7="http://guidewire.com/pc/gx/ama.gx.billingdata_model" xmlns:ns8="http://guidewire.com/pc/gx/ama.gx.branchdata_model" xmlns:ns9="http://guidewire.com/pc/gx/ama.gx.documentdata_model">
+  <Agent>
+    <ns0:AgentId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns0:AgentName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  </Agent>
+  <ApplicationInformation xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <Auto>
+    <ns1:ApplicationInformation>
+      <ns2:ActualOwner xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:DeclinedInsuranceFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:DeclinedInsuranceInsurerName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:DeclinedInsurancePolicyNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:DisabledDriverDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:DisabledDriverFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:FaintingDriverDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:FaintingDriverFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:HouseholdDriverDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:LicenseSuspendedDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:LicenseSuspendedFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:MoneyOwningOtherInsurerFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:NumberOfHouseholdDrivers xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:NumberOfHouseholdVehicles xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns2:RegisteredOwnerFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </ns1:ApplicationInformation>
+    <ns1:ClaimHistory>
+      <ns1:Entry>
+        <ns3:AtFaultFlag>true</ns3:AtFaultFlag>
+        <ns3:ClaimDriverId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns3:ClaimId>56305</ns3:ClaimId>
+        <ns3:ClaimNumber>A140123</ns3:ClaimNumber>
+        <ns3:ClaimVehicleId>45701</ns3:ClaimVehicleId>
+        <ns3:DataSource>AMA</ns3:DataSource>
+        <ns3:IgnoreFlag>false</ns3:IgnoreFlag>
+        <ns3:IncurredFlag>true</ns3:IncurredFlag>
+        <ns3:LossCause>Insured hit Third Party in rear</ns3:LossCause>
+        <ns3:LossDate>2014-11-14T00:00:00-07:00</ns3:LossDate>
+        <ns3:PercentAtFault>100</ns3:PercentAtFault>
+        <ns3:SecAFlag>true</ns3:SecAFlag>
+        <ns3:SecCFlag>false</ns3:SecCFlag>
+        <ns3:SEF39AppliedFlag>false</ns3:SEF39AppliedFlag>
+        <ns3:Status>Closed</ns3:Status>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns3:AtFaultFlag>false</ns3:AtFaultFlag>
+        <ns3:ClaimDriverId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns3:ClaimId>56306</ns3:ClaimId>
+        <ns3:ClaimNumber>A12345</ns3:ClaimNumber>
+        <ns3:ClaimVehicleId>45701</ns3:ClaimVehicleId>
+        <ns3:DataSource>AMA</ns3:DataSource>
+        <ns3:IgnoreFlag>false</ns3:IgnoreFlag>
+        <ns3:IncurredFlag>false</ns3:IncurredFlag>
+        <ns3:LossCause>No Other Category - Third Party liable</ns3:LossCause>
+        <ns3:LossDate>2011-10-16T01:00:00-06:00</ns3:LossDate>
+        <ns3:PercentAtFault>0</ns3:PercentAtFault>
+        <ns3:SecAFlag>false</ns3:SecAFlag>
+        <ns3:SecCFlag>false</ns3:SecCFlag>
+        <ns3:SEF39AppliedFlag>false</ns3:SEF39AppliedFlag>
+        <ns3:Status>Closed</ns3:Status>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns3:AtFaultFlag>true</ns3:AtFaultFlag>
+        <ns3:ClaimDriverId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns3:ClaimId>56307</ns3:ClaimId>
+        <ns3:ClaimNumber>A12345</ns3:ClaimNumber>
+        <ns3:ClaimVehicleId>45701</ns3:ClaimVehicleId>
+        <ns3:DataSource>AMA</ns3:DataSource>
+        <ns3:IgnoreFlag>false</ns3:IgnoreFlag>
+        <ns3:IncurredFlag>true</ns3:IncurredFlag>
+        <ns3:LossCause>No Other Category - Insured liable</ns3:LossCause>
+        <ns3:LossDate>2011-09-24T01:00:00-06:00</ns3:LossDate>
+        <ns3:PercentAtFault>100</ns3:PercentAtFault>
+        <ns3:SecAFlag>true</ns3:SecAFlag>
+        <ns3:SecCFlag>false</ns3:SecCFlag>
+        <ns3:SEF39AppliedFlag>false</ns3:SEF39AppliedFlag>
+        <ns3:Status>Closed</ns3:Status>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns3:AtFaultFlag>true</ns3:AtFaultFlag>
+        <ns3:ClaimDriverId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns3:ClaimId>56308</ns3:ClaimId>
+        <ns3:ClaimNumber>PRIOR</ns3:ClaimNumber>
+        <ns3:ClaimVehicleId>45701</ns3:ClaimVehicleId>
+        <ns3:DataSource>Manual</ns3:DataSource>
+        <ns3:IgnoreFlag>false</ns3:IgnoreFlag>
+        <ns3:IncurredFlag>true</ns3:IncurredFlag>
+        <ns3:LossCause>No Other Category</ns3:LossCause>
+        <ns3:LossDate>2006-06-17T01:00:00-06:00</ns3:LossDate>
+        <ns3:PercentAtFault>100</ns3:PercentAtFault>
+        <ns3:SecAFlag>true</ns3:SecAFlag>
+        <ns3:SecCFlag>true</ns3:SecCFlag>
+        <ns3:SEF39AppliedFlag>false</ns3:SEF39AppliedFlag>
+        <ns3:Status>Closed</ns3:Status>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns3:AtFaultFlag>false</ns3:AtFaultFlag>
+        <ns3:ClaimDriverId>42892</ns3:ClaimDriverId>
+        <ns3:ClaimId>73560</ns3:ClaimId>
+        <ns3:ClaimNumber>A2017-12345</ns3:ClaimNumber>
+        <ns3:ClaimVehicleId>45701</ns3:ClaimVehicleId>
+        <ns3:DataSource>AMA</ns3:DataSource>
+        <ns3:IgnoreFlag>false</ns3:IgnoreFlag>
+        <ns3:IncurredFlag>true</ns3:IncurredFlag>
+        <ns3:LossCause>Third Party backed into Insured</ns3:LossCause>
+        <ns3:LossDate>2017-02-19T12:07:00-07:00</ns3:LossDate>
+        <ns3:PercentAtFault>0</ns3:PercentAtFault>
+        <ns3:SecAFlag>true</ns3:SecAFlag>
+        <ns3:SecCFlag>true</ns3:SecCFlag>
+        <ns3:SEF39AppliedFlag>false</ns3:SEF39AppliedFlag>
+        <ns3:Status>Closed</ns3:Status>
+      </ns1:Entry>
+    </ns1:ClaimHistory>
+    <ns1:Driver>
+      <ns1:Entry>
+        <ns4:ConvictionInformation></ns4:ConvictionInformation>
+        <ns4:CreatedDate>2018-04-22T00:01:00-06:00</ns4:CreatedDate>
+        <ns4:DateOfBirth>1980-04-20T00:00:00-07:00</ns4:DateOfBirth>
+        <ns4:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns4:DriverId>42892</ns4:DriverId>
+        <ns4:DriverNumber>1</ns4:DriverNumber>
+        <ns4:DriverTrainingCertificateFlag>false</ns4:DriverTrainingCertificateFlag>
+        <ns4:EstateOf>false</ns4:EstateOf>
+        <ns4:FirstName>Jean</ns4:FirstName>
+        <ns4:GridStep>-3</ns4:GridStep>
+        <ns4:InsuranceHistory>
+          <ns4:Entry>
+            <ns4:PriorCarrier>451</ns4:PriorCarrier>
+            <ns4:PriorInsurancePolicyNumber>M62169</ns4:PriorInsurancePolicyNumber>
+          </ns4:Entry>
+          <ns4:Entry>
+            <ns4:PriorCarrier>908</ns4:PriorCarrier>
+            <ns4:PriorInsurancePolicyNumber>770404239</ns4:PriorInsurancePolicyNumber>
+          </ns4:Entry>
+          <ns4:Entry>
+            <ns4:PriorCarrier>766</ns4:PriorCarrier>
+            <ns4:PriorInsurancePolicyNumber>K2691199</ns4:PriorInsurancePolicyNumber>
+          </ns4:Entry>
+          <ns4:Entry>
+            <ns4:PriorCarrier>766</ns4:PriorCarrier>
+            <ns4:PriorInsurancePolicyNumber>K2126539</ns4:PriorInsurancePolicyNumber>
+          </ns4:Entry>
+          <ns4:Entry>
+            <ns4:PriorCarrier>274</ns4:PriorCarrier>
+            <ns4:PriorInsurancePolicyNumber>B0400053809</ns4:PriorInsurancePolicyNumber>
+          </ns4:Entry>
+          <ns4:Entry>
+            <ns4:PriorCarrier>766</ns4:PriorCarrier>
+            <ns4:PriorInsurancePolicyNumber>K3361349</ns4:PriorInsurancePolicyNumber>
+          </ns4:Entry>
+        </ns4:InsuranceHistory>
+        <ns4:IsNew>false</ns4:IsNew>
+        <ns4:LastName>Rucket</ns4:LastName>
+        <ns4:License>
+          <ns4:Entry>
+            <ns4:DateLicenced>1996-04-20T01:00:00-06:00</ns4:DateLicenced>
+            <ns4:LicenceType>5</ns4:LicenceType>
+            <ns4:LicenseNumber>142313-565</ns4:LicenseNumber>
+          </ns4:Entry>
+          <ns4:Entry>
+            <ns4:DateLicenced>2010-05-21T01:00:00-06:00</ns4:DateLicenced>
+            <ns4:LicenceType>6</ns4:LicenceType>
+            <ns4:LicenseNumber>142313-565</ns4:LicenseNumber>
+          </ns4:Entry>
+        </ns4:License>
+        <ns4:LicensedUnder15YearsDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns4:LicensedUnder15YearsFlag>false</ns4:LicensedUnder15YearsFlag>
+        <ns4:MiddleName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns4:Name>Jean Rucket</ns4:Name>
+        <ns4:NumberOfCriminalConvictions>0</ns4:NumberOfCriminalConvictions>
+        <ns4:NumberOfSeriousConvictions>0</ns4:NumberOfSeriousConvictions>
+        <ns4:NumberOfTrafficConvictions>0</ns4:NumberOfTrafficConvictions>
+        <ns4:Occupation>Other</ns4:Occupation>
+        <ns4:Relationship>Spouse</ns4:Relationship>
+        <ns4:ResidesOutsideAlbertaDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns4:ResidesOutsideAlbertaFlag>false</ns4:ResidesOutsideAlbertaFlag>
+        <ns4:Suffix xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns4:ConvictionInformation xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns4:CreatedDate>2018-04-22T00:01:00-06:00</ns4:CreatedDate>
+        <ns4:DateOfBirth>1980-05-14T01:00:00-06:00</ns4:DateOfBirth>
+        <ns4:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns4:DriverId>42893</ns4:DriverId>
+        <ns4:DriverNumber>2</ns4:DriverNumber>
+        <ns4:DriverTrainingCertificateFlag>false</ns4:DriverTrainingCertificateFlag>
+        <ns4:EstateOf>false</ns4:EstateOf>
+        <ns4:FirstName>Melanie</ns4:FirstName>
+        <ns4:GridStep>-15</ns4:GridStep>
+        <ns4:InsuranceHistory>
+          <ns4:Entry>
+            <ns4:PriorCarrier>766</ns4:PriorCarrier>
+            <ns4:PriorInsurancePolicyNumber>K2691194</ns4:PriorInsurancePolicyNumber>
+          </ns4:Entry>
+          <ns4:Entry>
+            <ns4:PriorCarrier>451</ns4:PriorCarrier>
+            <ns4:PriorInsurancePolicyNumber>M62160</ns4:PriorInsurancePolicyNumber>
+          </ns4:Entry>
+          <ns4:Entry>
+            <ns4:PriorCarrier>A75</ns4:PriorCarrier>
+            <ns4:PriorInsurancePolicyNumber>40433167</ns4:PriorInsurancePolicyNumber>
+          </ns4:Entry>
+          <ns4:Entry>
+            <ns4:PriorCarrier>766</ns4:PriorCarrier>
+            <ns4:PriorInsurancePolicyNumber>K2126530</ns4:PriorInsurancePolicyNumber>
+          </ns4:Entry>
+        </ns4:InsuranceHistory>
+        <ns4:IsNew>false</ns4:IsNew>
+        <ns4:LastName>Prefontaine-Rucket</ns4:LastName>
+        <ns4:License>
+          <ns4:Entry>
+            <ns4:DateLicenced>1996-05-14T01:00:00-06:00</ns4:DateLicenced>
+            <ns4:LicenceType>5</ns4:LicenceType>
+            <ns4:LicenseNumber>144045-812</ns4:LicenseNumber>
+          </ns4:Entry>
+        </ns4:License>
+        <ns4:LicensedUnder15YearsDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns4:LicensedUnder15YearsFlag>false</ns4:LicensedUnder15YearsFlag>
+        <ns4:MiddleName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns4:Name>Melanie Prefontaine-Rucket</ns4:Name>
+        <ns4:NumberOfCriminalConvictions>0</ns4:NumberOfCriminalConvictions>
+        <ns4:NumberOfSeriousConvictions>0</ns4:NumberOfSeriousConvictions>
+        <ns4:NumberOfTrafficConvictions>0</ns4:NumberOfTrafficConvictions>
+        <ns4:Occupation>Insurance/Financial</ns4:Occupation>
+        <ns4:Relationship>Self</ns4:Relationship>
+        <ns4:ResidesOutsideAlbertaDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns4:ResidesOutsideAlbertaFlag>false</ns4:ResidesOutsideAlbertaFlag>
+        <ns4:Suffix xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </ns1:Entry>
+    </ns1:Driver>
+    <ns1:PolicyCoverage>
+      <ns1:Entry>
+        <ns1:Code>PA_SEF_27</ns1:Code>
+        <ns1:CreatedDate>2018-04-22T00:01:00-06:00</ns1:CreatedDate>
+        <ns1:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns1:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns1:Description>Legal Liability For Damage To Non-Owned Vehicles (SEF 27)</ns1:Description>
+        <ns1:IsNew>false</ns1:IsNew>
+        <ns1:Limit>50,000</ns1:Limit>
+        <ns1:Premium>-50</ns1:Premium>
+      </ns1:Entry>
+    </ns1:PolicyCoverage>
+    <ns1:Vehicle>
+      <ns1:Entry>
+        <ns5:AnnualBusinessUse>0</ns5:AnnualBusinessUse>
+        <ns5:AnnualKilometers>10000</ns5:AnnualKilometers>
+        <ns5:AssignedDriver>
+          <ns5:Entry>
+            <ns5:DriverNumber>2</ns5:DriverNumber>
+            <ns5:PercentOfUsage>100</ns5:PercentOfUsage>
+            <ns5:PrincipalDriverFlag>true</ns5:PrincipalDriverFlag>
+            <ns5:UnderageDriverFlag>false</ns5:UnderageDriverFlag>
+          </ns5:Entry>
+        </ns5:AssignedDriver>
+        <ns5:BodyType>4D</ns5:BodyType>
+        <ns5:BussinesUsageAnnualKilometers>0</ns5:BussinesUsageAnnualKilometers>
+        <ns5:CarPoolDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:CarPoolingFlag>false</ns5:CarPoolingFlag>
+        <ns5:CarPoolPassengers xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:Commercial>
+          <ns5:DangerousGoodsDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:DeliveryFrequency xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:HaulingOrDelivery xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:HaulingOrDeliveryDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:HaulingTrailerFlag>false</ns5:HaulingTrailerFlag>
+          <ns5:MaximumDistance xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:OtherProvincesPercentage xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:OtherUsageDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:OtherUsageFlag>false</ns5:OtherUsageFlag>
+          <ns5:OutOfCountryFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:SetRouteFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:SubUse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:SupplementsLoadFlag>false</ns5:SupplementsLoadFlag>
+          <ns5:TimedDeliveryFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:YearsOfExperience xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </ns5:Commercial>
+        <ns5:CommuteKilometers>0</ns5:CommuteKilometers>
+        <ns5:Coverages>
+          <ns5:Entry>
+            <ns5:AdditionalInformation>
+              <ns5:Entry>
+                <ns5:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:DateOfBirth xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:Description>Limit</ns5:Description>
+                <ns5:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:License xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:NameExcludedDriver xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:Value>1,000,000</ns5:Value>
+              </ns5:Entry>
+            </ns5:AdditionalInformation>
+            <ns5:Code>PA_MAR_Third_Party</ns5:Code>
+            <ns5:CreatedDate>2018-04-22T00:01:00-06:00</ns5:CreatedDate>
+            <ns5:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Description>Third Party Liability</ns5:Description>
+            <ns5:IsNew>false</ns5:IsNew>
+            <ns5:Limit>1,000,000</ns5:Limit>
+            <ns5:Premium>-650</ns5:Premium>
+          </ns5:Entry>
+          <ns5:Entry>
+            <ns5:Code>PA_AMA_ABen</ns5:Code>
+            <ns5:CreatedDate>2018-04-22T00:01:00-06:00</ns5:CreatedDate>
+            <ns5:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Description>Accident Benefits</ns5:Description>
+            <ns5:IsNew>false</ns5:IsNew>
+            <ns5:Limit xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Premium>-80</ns5:Premium>
+          </ns5:Entry>
+          <ns5:Entry>
+            <ns5:AdditionalInformation>
+              <ns5:Entry>
+                <ns5:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:DateOfBirth xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:Description>Limit</ns5:Description>
+                <ns5:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:License xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:NameExcludedDriver xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:Value>1,000,000</ns5:Value>
+              </ns5:Entry>
+            </ns5:AdditionalInformation>
+            <ns5:Code>PA_SEF_44</ns5:Code>
+            <ns5:CreatedDate>2018-04-22T00:01:00-06:00</ns5:CreatedDate>
+            <ns5:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Description>Family Protection (SEF 44)</ns5:Description>
+            <ns5:IsNew>false</ns5:IsNew>
+            <ns5:Limit>1,000,000</ns5:Limit>
+            <ns5:Premium>-250</ns5:Premium>
+          </ns5:Entry>
+        </ns5:Coverages>
+        <ns5:CreatedDate>2010-10-31T01:00:00-06:00</ns5:CreatedDate>
+        <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:DescribeNonFactoryElectronics xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:Discount>
+          <ns5:Entry>Safe Driver Rate</ns5:Entry>
+          <ns5:Entry>Claim Free Rating</ns5:Entry>
+          <ns5:Entry>Multi Policy Discount</ns5:Entry>
+          <ns5:Entry>Multi Vehicle Discount</ns5:Entry>
+        </ns5:Discount>
+        <ns5:EngineModificationFlag>false</ns5:EngineModificationFlag>
+        <ns5:GridRated xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:GridStep>-15</ns5:GridStep>
+        <ns5:GrossWeight>1430</ns5:GrossWeight>
+        <ns5:GroundClearanceModificationFlag>false</ns5:GroundClearanceModificationFlag>
+        <ns5:InspectionDetails>
+          <ns5:Comments>Mechanic#12462B</ns5:Comments>
+          <ns5:DamagedFlag>false</ns5:DamagedFlag>
+          <ns5:InspectionDate>2011-11-22T00:00:00-07:00</ns5:InspectionDate>
+          <ns5:ReceivedDate>2011-11-25T00:00:00-07:00</ns5:ReceivedDate>
+          <ns5:RequestedDate>2011-11-22T00:00:00-07:00</ns5:RequestedDate>
+          <ns5:RoadworthyFlag>true</ns5:RoadworthyFlag>
+          <ns5:Status>Received</ns5:Status>
+        </ns5:InspectionDetails>
+        <ns5:IsNew>false</ns5:IsNew>
+        <ns5:IsSubstituted>false</ns5:IsSubstituted>
+        <ns5:ListPrice>30,417</ns5:ListPrice>
+        <ns5:Make>TOYOTA</ns5:Make>
+        <ns5:Model>CAMRY CE V6 4DR</ns5:Model>
+        <ns5:Modifications xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:MountedEquipment xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:NonFactoryElectronics>None</ns5:NonFactoryElectronics>
+        <ns5:NumberOfCylinders>6</ns5:NumberOfCylinders>
+        <ns5:PurchaseDate>2011-11-12T00:00:00-07:00</ns5:PurchaseDate>
+        <ns5:PurchasePrice>3,999</ns5:PurchasePrice>
+        <ns5:RateFactors>
+          <ns5:DrivingRecord>8</ns5:DrivingRecord>
+          <ns5:GridTerritoryCode>105</ns5:GridTerritoryCode>
+          <ns5:GridTerritoryDescription>Calgary Area</ns5:GridTerritoryDescription>
+          <ns5:LocationCode>1</ns5:LocationCode>
+          <ns5:OperatingTerritoryCode>105-A</ns5:OperatingTerritoryCode>
+          <ns5:OperatingTerritoryDescription>Calgary Area</ns5:OperatingTerritoryDescription>
+          <ns5:PrincipalClass>01</ns5:PrincipalClass>
+          <ns5:RateGroupAB>09</ns5:RateGroupAB>
+          <ns5:RateGroupAPAndCollision>11</ns5:RateGroupAPAndCollision>
+          <ns5:RateGroupSPAndComprehensive>07</ns5:RateGroupSPAndComprehensive>
+          <ns5:UnderageClass/>
+          <ns5:UnderageDrivingRecord/>
+        </ns5:RateFactors>
+        <ns5:RiskType>auto</ns5:RiskType>
+        <ns5:RollCageModificationFlag>false</ns5:RollCageModificationFlag>
+        <ns5:Surcharge xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:TiresModifiedFlag>false</ns5:TiresModifiedFlag>
+        <ns5:TransactionPremium>0</ns5:TransactionPremium>
+        <ns5:TransportGoodsDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:TransportGoodsFlag>false</ns5:TransportGoodsFlag>
+        <ns5:UnrepairedDamageType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:UsedOutsideCanadaDetails>0</ns5:UsedOutsideCanadaDetails>
+        <ns5:UsedOutsideCanadaFlag>false</ns5:UsedOutsideCanadaFlag>
+        <ns5:UsedVehicleFlag>true</ns5:UsedVehicleFlag>
+        <ns5:VehicleCode>761501</ns5:VehicleCode>
+        <ns5:VehicleId>45699</ns5:VehicleId>
+        <ns5:VehicleLocation>
+          <ns5:AddressLine1>2051 BROC CRES SOUTH EAST / SUD EST</ns5:AddressLine1>
+          <ns5:AddressLine2>CALGARY, AB T2B 1P5</ns5:AddressLine2>
+          <ns5:AddressLine3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:AddressLine4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:City>CALGARY</ns5:City>
+          <ns5:Country>Canada</ns5:Country>
+          <ns5:PostalCode>T2B 1P5</ns5:PostalCode>
+          <ns5:ProvinceCode>AB</ns5:ProvinceCode>
+          <ns5:ProvinceDescription>Alberta</ns5:ProvinceDescription>
+        </ns5:VehicleLocation>
+        <ns5:VehicleNumber>1</ns5:VehicleNumber>
+        <ns5:VehicleRentedDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:VehicleRentedFlag>false</ns5:VehicleRentedFlag>
+        <ns5:VehicleUse>Pleasure</ns5:VehicleUse>
+        <ns5:VIN>JT2BF22K0W0104145</ns5:VIN>
+        <ns5:Year>1998</ns5:Year>
+      </ns1:Entry>
+      <ns1:Entry>
+        <ns5:AdditionalInterest>
+          <ns5:Entry>
+            <ns5:Address>
+              <ns6:AddressLine1>300-1212 41 AVE NE</ns6:AddressLine1>
+              <ns6:AddressLine2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:AddressLine3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:AddressLine4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+              <ns6:City>CALGARY</ns6:City>
+              <ns6:Country>Canada</ns6:Country>
+              <ns6:PostalCode>T2E 7S8</ns6:PostalCode>
+              <ns6:ProvinceCode>AB</ns6:ProvinceCode>
+              <ns6:ProvinceDescription>Alberta</ns6:ProvinceDescription>
+            </ns5:Address>
+            <ns5:CreatedDate>2018-04-22T00:01:00-06:00</ns5:CreatedDate>
+            <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Id>14575</ns5:Id>
+            <ns5:InterestType>LIEN</ns5:InterestType>
+            <ns5:IsNew>false</ns5:IsNew>
+            <ns5:Name>Second Calgary Savings</ns5:Name>
+          </ns5:Entry>
+        </ns5:AdditionalInterest>
+        <ns5:AnnualBusinessUse>0</ns5:AnnualBusinessUse>
+        <ns5:AnnualKilometers>20000</ns5:AnnualKilometers>
+        <ns5:AssignedDriver>
+          <ns5:Entry>
+            <ns5:DriverNumber>1</ns5:DriverNumber>
+            <ns5:PercentOfUsage>100</ns5:PercentOfUsage>
+            <ns5:PrincipalDriverFlag>true</ns5:PrincipalDriverFlag>
+            <ns5:UnderageDriverFlag>false</ns5:UnderageDriverFlag>
+          </ns5:Entry>
+        </ns5:AssignedDriver>
+        <ns5:BodyType>PV</ns5:BodyType>
+        <ns5:BussinesUsageAnnualKilometers>0</ns5:BussinesUsageAnnualKilometers>
+        <ns5:CarPoolDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:CarPoolingFlag>false</ns5:CarPoolingFlag>
+        <ns5:CarPoolPassengers xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:Commercial>
+          <ns5:DangerousGoodsDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:DeliveryFrequency xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:HaulingOrDelivery xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:HaulingOrDeliveryDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:HaulingTrailerFlag>false</ns5:HaulingTrailerFlag>
+          <ns5:MaximumDistance xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:OtherProvincesPercentage xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:OtherUsageDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:OtherUsageFlag>false</ns5:OtherUsageFlag>
+          <ns5:OutOfCountryFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:SetRouteFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:SubUse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:SupplementsLoadFlag>false</ns5:SupplementsLoadFlag>
+          <ns5:TimedDeliveryFlag xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:YearsOfExperience xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </ns5:Commercial>
+        <ns5:CommuteKilometers>0</ns5:CommuteKilometers>
+        <ns5:Coverages>
+          <ns5:Entry>
+            <ns5:AdditionalInformation>
+              <ns5:Entry>
+                <ns5:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:DateOfBirth xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:Description>Limit</ns5:Description>
+                <ns5:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:License xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:NameExcludedDriver xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:Value>1,000,000</ns5:Value>
+              </ns5:Entry>
+            </ns5:AdditionalInformation>
+            <ns5:Code>PA_MAR_Third_Party</ns5:Code>
+            <ns5:CreatedDate>2018-04-22T00:01:00-06:00</ns5:CreatedDate>
+            <ns5:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Description>Third Party Liability</ns5:Description>
+            <ns5:IsNew>false</ns5:IsNew>
+            <ns5:Limit>1,000,000</ns5:Limit>
+            <ns5:Premium>-2,466</ns5:Premium>
+          </ns5:Entry>
+          <ns5:Entry>
+            <ns5:Code>PA_AMA_ABen</ns5:Code>
+            <ns5:CreatedDate>2018-04-22T00:01:00-06:00</ns5:CreatedDate>
+            <ns5:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Description>Accident Benefits</ns5:Description>
+            <ns5:IsNew>false</ns5:IsNew>
+            <ns5:Limit xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Premium>-78</ns5:Premium>
+          </ns5:Entry>
+          <ns5:Entry>
+            <ns5:AdditionalInformation>
+              <ns5:Entry>
+                <ns5:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:DateOfBirth xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:Description>Deductible</ns5:Description>
+                <ns5:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:License xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:NameExcludedDriver xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:Value>1,000</ns5:Value>
+              </ns5:Entry>
+            </ns5:AdditionalInformation>
+            <ns5:Code>PA_MAR_Collision</ns5:Code>
+            <ns5:CreatedDate>2018-04-22T00:01:00-06:00</ns5:CreatedDate>
+            <ns5:Deductible>1,000</ns5:Deductible>
+            <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Description>Collision</ns5:Description>
+            <ns5:IsNew>false</ns5:IsNew>
+            <ns5:Limit xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Premium>-600</ns5:Premium>
+          </ns5:Entry>
+          <ns5:Entry>
+            <ns5:AdditionalInformation>
+              <ns5:Entry>
+                <ns5:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:DateOfBirth xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:Description>Deductible</ns5:Description>
+                <ns5:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:License xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:NameExcludedDriver xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:Value>500</ns5:Value>
+              </ns5:Entry>
+            </ns5:AdditionalInformation>
+            <ns5:Code>PA_MAR_Comprehensive</ns5:Code>
+            <ns5:CreatedDate>2018-04-22T00:01:00-06:00</ns5:CreatedDate>
+            <ns5:Deductible>500</ns5:Deductible>
+            <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Description>Comprehensive</ns5:Description>
+            <ns5:IsNew>false</ns5:IsNew>
+            <ns5:Limit xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Premium>-378</ns5:Premium>
+          </ns5:Entry>
+          <ns5:Entry>
+            <ns5:AdditionalInformation>
+              <ns5:Entry>
+                <ns5:CreatedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:DateOfBirth xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:Description>Limit</ns5:Description>
+                <ns5:IsNew xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:License xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:NameExcludedDriver xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns5:Value>1,000,000</ns5:Value>
+              </ns5:Entry>
+            </ns5:AdditionalInformation>
+            <ns5:Code>PA_SEF_44</ns5:Code>
+            <ns5:CreatedDate>2018-04-22T00:01:00-06:00</ns5:CreatedDate>
+            <ns5:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Description>Family Protection (SEF 44)</ns5:Description>
+            <ns5:IsNew>false</ns5:IsNew>
+            <ns5:Limit>1,000,000</ns5:Limit>
+            <ns5:Premium>-26</ns5:Premium>
+          </ns5:Entry>
+        </ns5:Coverages>
+        <ns5:CreatedDate>2015-06-17T01:00:00-06:00</ns5:CreatedDate>
+        <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:DescribeNonFactoryElectronics xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:Discount>
+          <ns5:Entry>Multi Policy Discount</ns5:Entry>
+          <ns5:Entry>Multi Vehicle Discount</ns5:Entry>
+          <ns5:Entry>Select Customer Discount</ns5:Entry>
+        </ns5:Discount>
+        <ns5:Endorsement>
+          <ns5:Entry>
+            <ns5:Code>PA_SEF_13D</ns5:Code>
+            <ns5:CreatedDate>2018-04-22T00:01:00-06:00</ns5:CreatedDate>
+            <ns5:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Description>Limited Glass (SEF 13D)</ns5:Description>
+            <ns5:IsNew>false</ns5:IsNew>
+            <ns5:Limit xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Premium>47</ns5:Premium>
+          </ns5:Entry>
+          <ns5:Entry>
+            <ns5:Code>PA_SEF_23A</ns5:Code>
+            <ns5:CreatedDate>2018-04-22T00:01:00-06:00</ns5:CreatedDate>
+            <ns5:Deductible xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:DeletedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Description>Mortgage Endorsement (SEF 23A)</ns5:Description>
+            <ns5:IsNew>false</ns5:IsNew>
+            <ns5:Limit xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns5:Premium>0</ns5:Premium>
+          </ns5:Entry>
+        </ns5:Endorsement>
+        <ns5:EngineModificationFlag>false</ns5:EngineModificationFlag>
+        <ns5:GridRated xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:GridStep>-3</ns5:GridStep>
+        <ns5:GrossWeight>2115</ns5:GrossWeight>
+        <ns5:GroundClearanceModificationFlag>false</ns5:GroundClearanceModificationFlag>
+        <ns5:InspectionDetails>
+          <ns5:Comments xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:DamagedFlag>false</ns5:DamagedFlag>
+          <ns5:InspectionDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:ReceivedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:RequestedDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:RoadworthyFlag>false</ns5:RoadworthyFlag>
+          <ns5:Status xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </ns5:InspectionDetails>
+        <ns5:IsNew>false</ns5:IsNew>
+        <ns5:IsSubstituted>false</ns5:IsSubstituted>
+        <ns5:ListPrice>43,449</ns5:ListPrice>
+        <ns5:Make>TOYOTA TRUCK-VA</ns5:Make>
+        <ns5:Model>SIENNA XLE V6 A</ns5:Model>
+        <ns5:Modifications xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:MountedEquipment xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:NonFactoryElectronics>None</ns5:NonFactoryElectronics>
+        <ns5:NumberOfCylinders>6</ns5:NumberOfCylinders>
+        <ns5:PurchaseDate>2015-06-17T01:00:00-06:00</ns5:PurchaseDate>
+        <ns5:PurchasePrice>53,000</ns5:PurchasePrice>
+        <ns5:RateFactors>
+          <ns5:DrivingRecord>3</ns5:DrivingRecord>
+          <ns5:GridTerritoryCode>101</ns5:GridTerritoryCode>
+          <ns5:GridTerritoryDescription>Calgary Area</ns5:GridTerritoryDescription>
+          <ns5:LocationCode>1</ns5:LocationCode>
+          <ns5:OperatingTerritoryCode>101-A</ns5:OperatingTerritoryCode>
+          <ns5:OperatingTerritoryDescription>Calgary Area</ns5:OperatingTerritoryDescription>
+          <ns5:PrincipalClass>02</ns5:PrincipalClass>
+          <ns5:RateGroupAB>10</ns5:RateGroupAB>
+          <ns5:RateGroupAPAndCollision>33</ns5:RateGroupAPAndCollision>
+          <ns5:RateGroupSPAndComprehensive>35</ns5:RateGroupSPAndComprehensive>
+          <ns5:UnderageClass/>
+          <ns5:UnderageDrivingRecord/>
+        </ns5:RateFactors>
+        <ns5:RiskType>auto</ns5:RiskType>
+        <ns5:RollCageModificationFlag>false</ns5:RollCageModificationFlag>
+        <ns5:Surcharge xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:TiresModifiedFlag>false</ns5:TiresModifiedFlag>
+        <ns5:TransactionPremium>0</ns5:TransactionPremium>
+        <ns5:TransportGoodsDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:TransportGoodsFlag>false</ns5:TransportGoodsFlag>
+        <ns5:UnrepairedDamageType xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:UsedOutsideCanadaDetails>0</ns5:UsedOutsideCanadaDetails>
+        <ns5:UsedOutsideCanadaFlag>false</ns5:UsedOutsideCanadaFlag>
+        <ns5:UsedVehicleFlag>false</ns5:UsedVehicleFlag>
+        <ns5:VehicleCode>768900</ns5:VehicleCode>
+        <ns5:VehicleId>45701</ns5:VehicleId>
+        <ns5:VehicleLocation>
+          <ns5:AddressLine1>2052 BIRCH CRES SOUTH EAST / SUD EST</ns5:AddressLine1>
+          <ns5:AddressLine2>CALGARY, AB T2B 1P4</ns5:AddressLine2>
+          <ns5:AddressLine3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:AddressLine4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns5:City>CALGARY</ns5:City>
+          <ns5:Country>Canada</ns5:Country>
+          <ns5:PostalCode>T2B 1P4</ns5:PostalCode>
+          <ns5:ProvinceCode>AB</ns5:ProvinceCode>
+          <ns5:ProvinceDescription>Alberta</ns5:ProvinceDescription>
+        </ns5:VehicleLocation>
+        <ns5:VehicleNumber>3</ns5:VehicleNumber>
+        <ns5:VehicleRentedDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns5:VehicleRentedFlag>false</ns5:VehicleRentedFlag>
+        <ns5:VehicleUse>Pleasure</ns5:VehicleUse>
+        <ns5:VIN>5TDDK3DC3FS107695</ns5:VIN>
+        <ns5:Year>2015</ns5:Year>
+      </ns1:Entry>
+    </ns1:Vehicle>
+  </Auto>
+  <Billing>
+    <ns7:AccountName>Jean Rucket</ns7:AccountName>
+    <ns7:AccountNumber>C007252826</ns7:AccountNumber>
+    <ns7:BankAccountNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns7:BankNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns7:DelinquencyAmount>4,345.00</ns7:DelinquencyAmount>
+    <ns7:DelinquencyDate>2018-05-16T00:00:00-06:00</ns7:DelinquencyDate>
+    <ns7:DisbursementAmount>0.00</ns7:DisbursementAmount>
+    <ns7:DueAmount>4,234.00</ns7:DueAmount>
+    <ns7:DueDate>2018-04-22T00:00:00-06:00</ns7:DueDate>
+    <ns7:NSFAmount>4,236.00</ns7:NSFAmount>
+    <ns7:NSFDate>2018-04-22T00:00:00-06:00</ns7:NSFDate>
+    <ns7:NSFFee>0.00</ns7:NSFFee>
+    <ns7:PADServiceFee>0.00</ns7:PADServiceFee>
+    <ns7:PADServiceFeePercent>5.0</ns7:PADServiceFeePercent>
+    <ns7:PayerName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns7:PaymentAmount>0.00</ns7:PaymentAmount>
+    <ns7:PaymentDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns7:PaymentPlan>AMA Full Pay Plan</ns7:PaymentPlan>
+    <ns7:PaymentSchedule xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns7:PolicyTermRemainingBalance>4,456.00</ns7:PolicyTermRemainingBalance>
+    <ns7:PreviousSixMonthTerm>false</ns7:PreviousSixMonthTerm>
+    <ns7:RelatedPolicy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns7:TotalOutstandingAmount>4,123.00</ns7:TotalOutstandingAmount>
+    <ns7:totalPaidAmount>0.00</ns7:totalPaidAmount>
+    <ns7:TotalPremiumAmount>0.00</ns7:TotalPremiumAmount>
+    <ns7:TotalTransactionAmount>-4,567.00</ns7:TotalTransactionAmount>
+    <ns7:TransitNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns7:WithdrawalDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  </Billing>
+  <Branch>
+    <ns8:BranchAddress>
+      <ns6:AddressLine1>9123 42 AVE</ns6:AddressLine1>
+      <ns6:AddressLine2>Edmonton, AB T6E 5Y4</ns6:AddressLine2>
+      <ns6:AddressLine3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns6:AddressLine4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns6:City>Edmonton</ns6:City>
+      <ns6:Country>Canada</ns6:Country>
+      <ns6:PostalCode>T6E 5Y4</ns6:PostalCode>
+      <ns6:ProvinceCode>AB</ns6:ProvinceCode>
+      <ns6:ProvinceDescription>Alberta</ns6:ProvinceDescription>
+    </ns8:BranchAddress>
+    <ns8:BranchId>84</ns8:BranchId>
+    <ns8:BranchName>Contact Sales Ctr</ns8:BranchName>
+  </Branch>
+  <BusinessNumberAndExt>403-294-3251</BusinessNumberAndExt>
+  <CancellationDate>2018-04-22T00:01:00-06:00</CancellationDate>
+  <CancellationMethod>Flat</CancellationMethod>
+  <CancellationReason>Because</CancellationReason>
+  <CancellationSource>Insured</CancellationSource>
+  <CommercialProperty xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <DocumentData>
+    <ns9:Author>
+      <ns9:AgentFlag>false</ns9:AgentFlag>
+      <ns9:AuthorFirstName>Super</ns9:AuthorFirstName>
+      <ns9:AuthorLastName>User</ns9:AuthorLastName>
+      <ns9:LoginId>su</ns9:LoginId>
+    </ns9:Author>
+    <ns9:ContentServer>crp-12345-pa01</ns9:ContentServer>
+    <ns9:ContentServerFileName/>
+    <ns9:CustomerInBranchFlag>true</ns9:CustomerInBranchFlag>
+    <ns9:DocumentID>DAC001</ns9:DocumentID>
+    <ns9:Filename>AMA\src\printreport\genAutoDocSet_xml.p</ns9:Filename>
+    <ns9:GuidewireServer>INP-P-GWPP-C01</ns9:GuidewireServer>
+    <ns9:Input>
+      <ns9:Entry xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </ns9:Input>
+    <ns9:isPrintedOvernight>yes</ns9:isPrintedOvernight>
+  </DocumentData>
+  <ExpiryDate>2019-04-22T00:01:00-06:00</ExpiryDate>
+  <HomePhoneNumber>123-755-5049</HomePhoneNumber>
+  <InsuredInfo>
+    <Entry>
+      <ns10:BirthDate>1980-04-20T00:00:00-07:00</ns10:BirthDate>
+      <ns10:ContactType>Individual</ns10:ContactType>
+      <ns10:CreditCheck>Not Available</ns10:CreditCheck>
+      <ns10:EstateOf>false</ns10:EstateOf>
+      <ns10:FirstName>Jean</ns10:FirstName>
+      <ns10:LastName>Rucket</ns10:LastName>
+      <ns10:MembershipExpiryDate>2019-04-15T00:00:00-06:00</ns10:MembershipExpiryDate>
+      <ns10:MembershipNoticeFlag>false</ns10:MembershipNoticeFlag>
+      <ns10:MembershipNumber>6202721460241998</ns10:MembershipNumber>
+      <ns10:MiddleName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns10:Occupation>Other</ns10:Occupation>
+      <ns10:PrimaryInsured>true</ns10:PrimaryInsured>
+      <ns10:Suffix xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </Entry>
+    <Entry>
+      <ns10:BirthDate>1980-05-14T01:00:00-06:00</ns10:BirthDate>
+      <ns10:ContactType>Individual</ns10:ContactType>
+      <ns10:CreditCheck>Approved</ns10:CreditCheck>
+      <ns10:EstateOf>false</ns10:EstateOf>
+      <ns10:FirstName>Melanie</ns10:FirstName>
+      <ns10:LastName>Prefontaine-Rucket</ns10:LastName>
+      <ns10:MembershipExpiryDate>2019-04-15T00:00:00-06:00</ns10:MembershipExpiryDate>
+      <ns10:MembershipNoticeFlag>false</ns10:MembershipNoticeFlag>
+      <ns10:MembershipNumber>6202721460241999</ns10:MembershipNumber>
+      <ns10:MiddleName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <ns10:Occupation>Insurance/Financial</ns10:Occupation>
+      <ns10:PrimaryInsured>false</ns10:PrimaryInsured>
+      <ns10:Suffix xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </Entry>
+  </InsuredInfo>
+  <Jurisdiction>AB</Jurisdiction>
+  <Language>en_US</Language>
+  <LineOfBusiness>Automobile</LineOfBusiness>
+  <MailingAddress>
+    <ns6:AddressLine1>2051 BROC CRES SOUTH EAST / SUD EST</ns6:AddressLine1>
+    <ns6:AddressLine2>CALGARY, AB T2B 1P4</ns6:AddressLine2>
+    <ns6:AddressLine3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns6:AddressLine4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns6:City>CALGARY</ns6:City>
+    <ns6:Country>Canada</ns6:Country>
+    <ns6:PostalCode>T2B 1P4</ns6:PostalCode>
+    <ns6:ProvinceCode>AB</ns6:ProvinceCode>
+    <ns6:ProvinceDescription>Alberta</ns6:ProvinceDescription>
+  </MailingAddress>
+  <MobilePhoneNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <OriginalInceptionDate>2008-08-11T01:00:00-06:00</OriginalInceptionDate>
+  <PolicyNumber>X62160</PolicyNumber>
+  <PolicyStatus>Cancellation</PolicyStatus>
+  <PolicyTermLength>Annual</PolicyTermLength>
+  <PolicyTermStartDate>2018-04-22T00:01:00-06:00</PolicyTermStartDate>
+  <PolicyVersion>180424000572</PolicyVersion>
+  <PolicyVersionEffectiveDate>2018-04-22T00:01:00-06:00</PolicyVersionEffectiveDate>
+  <PreviousInsurerName>Unknown</PreviousInsurerName>
+  <PreviousPolicyExpirationDate>2012-04-22T00:00:00-06:00</PreviousPolicyExpirationDate>
+  <PreviousPolicyNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <PrimaryEmail xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <PrimaryPhone xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <ProductType>Automobile</ProductType>
+  <Property xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <PublicID>pc:719551</PublicID>
+  <QuoteNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <ReasonSEF39Removed xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <ReferencePolicyNumber xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <RelatedPolicy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <TermNumber>1</TermNumber>
+  <TransactionCode xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <TransactionDescription xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</Policy>
