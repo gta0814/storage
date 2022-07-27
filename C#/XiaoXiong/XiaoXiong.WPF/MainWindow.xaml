@@ -1,0 +1,31 @@
+﻿<Window x:Class="XiaoXiong.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XiaoXiong.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="FileNameLabe"
+               Content="" 
+               Grid.Row="0" 
+               HorizontalAlignment="Center"
+               FontSize="24"/>
+        <StackPanel Grid.Row="1"
+                    AllowDrop="True"
+                    Background="LightGray"
+                    Margin="40, 0, 40, 0"
+                    Drop="StackPanel_Drop">
+            <Label x:Name="MainLabel" Content="把文件拖进来" HorizontalAlignment="Center"/>
+            <Button x:Name="RunButton" Content="运行" Height="54" Click="RunButton_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

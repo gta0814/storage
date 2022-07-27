@@ -60,7 +60,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckQOH.cs" />
+    <Compile Include="CheckFuncs.cs" />
     <Compile Include="Model\BillDetail.cs" />
     <Compile Include="Model\ComingPO.cs" />
     <Compile Include="Model\QOH.cs" />

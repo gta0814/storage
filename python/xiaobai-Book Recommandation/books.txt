@@ -1,0 +1,55 @@
+0517693119, 1989, The Hitchhiker's Guide To The Galaxy, Douglas Adams
+0025002600, 1978, Watership Down, Richard Adams
+0937247065, 1988, The Five People You Meet in Heaven, Mitch Albom
+8809744454, 2009, Speak, Laurie Halse Anderson
+0929631048, 1989, I Know Why the Caged Bird Sings, Maya Angelou
+1595141712, 2010, Thirteen Reasons Why, Jay Asher
+0553382570, 1964, Foundation Series, Isaac Asimov
+0375890291, 2002, The Sisterhood of the Travelling Pants, Ann Brashares
+0731814909, 2010, A Great and Terrible Beauty, Libba Bray
+8495618818, 2004, The Da Vinci Code, Dan Brown
+0230037518, 2008, The Princess Diaries, Meg Cabot
+3641082505, 2012, Ender's Game, Orson Scott Card
+0425116840, 1989, The Hunt for Red October, Tom Clancy
+0545229936, 2009, The Hunger Games, Suzanne Collins
+0743273565, 1925, The Great Gatsby, F. Scott Fitzgerald
+0142411736, 2004, Ranger's Apprentice Series, John Flanagan
+0606338039, 2005, Inkheart, Cornelia Funke
+0441007465, 2000, Neuromancer, William Gibson
+0399501487, 1963, Lord of the Flies, William Golding
+0345439740, 1957, The Princess Bride, William Goldman
+1863330550, 1992, Dinotopia: A Land Apart from Time, James Gurney
+1894448200, 2000, Far North, Will Hobbs
+0425190374, 2003, Practical Magic, Alice Hoffman
+0060850523, 1968, Brave New World, Aldous Huxley
+0143176763, 2010, The Summer Tree, Guy Gavriel Kay
+0871295377, 1969, Flowers For Algernon, Daniel Keyes
+0618439102, 2004, Owl in Love, Patrice Kindl
+1569319006, 2003, Naruto, Masashi Kishimoto
+1591164418, 2004, Bleach (graphic novel), Tite Kubo
+0230738034, 2008, Kiss the Dust, Elizabeth Laird
+0871299208, 1970, To Kill a Mockingbird, Harper Lee
+0064404990, 1950, The Lion the Witch and the Wardrobe, C S Lewis
+0312331754, 2004, The Bourne Series, Robert Ludlum
+0547416113, 2002, Life of Pi, Yann Martel
+0440240167, 2010, Breathless, Lurlene McDaniel
+1905654391, 2008, Twilight Series, Stephenie Meyer
+0061975133, 2009, Sabriel, Garth Nix
+1411469380, 1982, Nineteen Eighty-Four (1984), George Orwell
+0375890369, 2003, Eragon, Christopher Paolini
+0330338730, 1994, Hatchet, Gary Paulsen
+1416549178, 2007, My Sister's Keeper, Jodi Picoult
+0375846724, 1997, The Golden Compass, Philip Pullman
+0590353403, 1998, Harry Potter Series, J.K. Rowling
+8434878607, 2001, Holes, Louis Sachar
+1156393361, 1968, Shonen Jump Series, Shueisha
+0142300942, 1988, The Shadow Club, Neil Shusterman
+1443102067, 1993, Bone Series, Jeff Smith
+0394747232, 1986, Maus: A Survivor's Tale, Art Spiegelman
+0143038095, 1992, The Joy Luck Club, Amy Tan
+0261102958, 1992, The Lord of the Rings, J R R Tolkien
+0345339683, 1982, The Hobbit, J R R Tolkien
+0143181538, 2007, Shattered, Eric Walters
+1603034013, 1898, The War Of The Worlds, H G Wells
+0547538648, 2015, Dealing with Dragons, Patricia C. Wrede
+0141038462, 1964, The Chrysalids, John Wyndham

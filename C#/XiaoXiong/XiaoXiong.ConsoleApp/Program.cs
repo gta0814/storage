@@ -13,7 +13,7 @@ namespace XiaoXiong.ConsoleApp
         {
 
             Console.WriteLine("耐心等会啊......");
-            CheckQOH.CheckQOH.ShipCheck();
+            CheckFuncs.ShipCheck("fileName");
         }
     }
 }
