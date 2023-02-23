@@ -16,7 +16,7 @@ Faker==15.3.3
 ipykernel==6.15.2
 ipython==8.4.0
 jedi==0.18.1
-jupyter-core==4.11.1
+jupyter-core==4.11.2
 jupyter_client==7.3.5
 matplotlib-inline==0.1.6
 nest-asyncio==1.5.5
